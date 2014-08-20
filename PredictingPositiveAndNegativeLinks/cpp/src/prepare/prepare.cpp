@@ -4,8 +4,8 @@
 #include <algorithm>
 #include <iterator>
 
-#include "libs/ezOptionParser/ezOptionParser.hpp"
-#include "libs/ngraph/ngraph.hpp"
+#include "ezOptionParser/ezOptionParser.hpp"
+#include "ngraph/ngraph.hpp"
 
 #define UNUSED(x) (void)(x)
 
