@@ -1,12 +1,21 @@
-INCLUDE=../../libs
-CPPFLAGS=-Wall -Wextra -Werror -std=c++0x -I$(INCLUDE)
-LDFLAGS=
-BIN_ROOT=../../bin
-BIN_FOLDER=prepare
+SOURCES		=main.cpp
+EXECUTABLE	=prepare
+BIN_FOLDER	=prepare
 
-prepare: prepare.o
+
+CC			=g++
+LDFLAGS		=
+INCLUDE		=../../libs
+CPPFLAGS	=-Wall -Wextra -Werror -std=c++0x -I$(INCLUDE)
+OBJECTS		=$(SOURCES:.cpp=.o)
+BIN_ROOT	=../../bin
+
+
+all: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(FLAGS) $(BIN_ROOT)/$(BIN_FOLDER)/$(OBJECTS) -o $(BIN_ROOT)/$(BIN_FOLDER)/$@
+
+.cpp.o:
 	mkdir -p $(BIN_ROOT)/$(BIN_FOLDER)
-	g++ $(LDFLAGS) -o $(BIN_ROOT)/$(BIN_FOLDER)/prepare prepare.o
-
-prepare.o: prepare.cpp
-	g++ $(CPPFLAGS) -c prepare.cpp
+	$(CC) $(CPPFLAGS) -c $< -o $(BIN_ROOT)/$(BIN_FOLDER)/$@
