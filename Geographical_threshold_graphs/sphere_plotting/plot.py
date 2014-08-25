@@ -4,6 +4,8 @@ import dateutil.parser
 import igraph
 import numpy
 import re
+import random
+import math
 
 def project2D(layout, alpha, beta):
 	'''
@@ -42,9 +44,9 @@ def drawGraph3D(graph, layout, angle, fileName):
 	zVal, zOrder = zip(*sorted(zip(graph.vs['z3'], range(graph.vcount()))))
 
 	# Setup the cairo surface
-	surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, 1280, 800)
+	surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, 1280, 1280)
 	con = cairo.Context(surf)
-	con.scale(1280.0, 800.0)
+	con.scale(1280.0, 1280.0)
 
 	# Draw the background
 	con.set_source_rgba(0.0, 0.0, 0.0, 1.0)
@@ -104,14 +106,35 @@ def drawGraph3D(graph, layout, angle, fileName):
 	# Output the surface
 	surf.write_to_png(fileName)
 
+def generate_sphere(dimension, size):
+    coords = []
 
+    for i in range(0, size):
+        radius = 0.0
+        vector = []
+
+        for j in range(0, dimension):
+            vector.append(random.normalvariate(0, 1))
+            radius += vector[j]**2
+
+        radius = math.sqrt(radius)
+        coords.append([x / radius for x in vector])
+
+    return coords
 
 print igraph.__version__
 g = igraph.Graph()
 g.add_vertices(100)
-g.add_edge(1,2)
-g.add_edge(99,98)
-drawGraph3D(g, g.layout("sphere"), [0, 0, 0], "sphere.jpg")
-#layout = g.layout("sphere")
-#list = list(layout)
+layout = g.layout("sphere")
+
+coords = generate_sphere(3, 100)
+
+for i in range(0, 100):
+    layout[i] = coords[i]
+
+print layout.coords
+
+drawGraph3D(g, layout, [0, 0, 0], "sphere3.jpg")
+
+print layout.coords
 
