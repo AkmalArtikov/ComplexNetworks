@@ -13,7 +13,7 @@ using namespace NGraph;
 using namespace ez;
 
 template<class T>
-std::vector<std::pair<std::vector<double>, int> > generate_features(const tGraph<T> &g, const tGraph<T> &gPos, const tGraph<T> &gNeg, const std::vector<std::pair<std::pair<T, T>, int> > &edges) {
+std::vector<std::pair<std::vector<double>, int> > generateFeatures(const tGraph<T> &g, const tGraph<T> &gPos, const tGraph<T> &gNeg, const std::vector<std::pair<std::pair<T, T>, int> > &edges) {
     std::vector<std::pair<std::vector<double>, int> > result;
     int count = 0;
     int fullSize = edges.size();
@@ -154,7 +154,15 @@ void featuresToCSV(const std::string &filename, const std::vector<std::pair<std:
     }
 }
 
-void readEpinionsOrSlashdotFileAndMakeCSV(const std::string &inFilename, const std::string &outFilename) {
+template<class T>
+void edgesToCSV(const std::string &filename, const std::vector<std::pair<std::pair<T, T>, int> > &edges) {
+    std::ofstream out(filename);
+    for (typename std::vector<std::pair<std::pair<T, T>, int> >::const_iterator i = edges.begin(); i != edges.end(); ++i) {
+        out << i->first.first << "\t" << i->first.second << "\t" << i->second << std::endl;
+    }
+}
+
+void readEpinionsOrSlashdotFileAndMakeCSV(const std::string &inFilename, const std::string &outFilename, bool forLibFM = false) {
     std::ifstream infile(inFilename);
     std::string line;
     Graph gPos;
@@ -184,11 +192,15 @@ void readEpinionsOrSlashdotFileAndMakeCSV(const std::string &inFilename, const s
         }
     }
     std::cout << "Graph is readed." << std::endl;
-    std::vector<std::pair<std::vector<double>, int> > features = generate_features(g, gPos, gNeg, edges);
-    featuresToCSV(outFilename, features);
+    if (forLibFM) {
+        edgesToCSV(outFilename, edges);
+    } else {
+        std::vector<std::pair<std::vector<double>, int> > features = generateFeatures(g, gPos, gNeg, edges);
+        featuresToCSV(outFilename, features);
+    }
 }
 
-void readWikiFileAndMakeCSV(const std::string &inFilename, const std::string &outFilename) {
+void readWikiFileAndMakeCSV(const std::string &inFilename, const std::string &outFilename, bool forLibFM = false) {
     std::ifstream infile(inFilename);
     std::string line;
     Graph gPos;
@@ -230,8 +242,12 @@ void readWikiFileAndMakeCSV(const std::string &inFilename, const std::string &ou
         }
     }
     std::cout << "Graph is readed." << std::endl;
-    std::vector<std::pair<std::vector<double>, int> > features = generate_features(g, gPos, gNeg, edges);
-    featuresToCSV(outFilename, features);
+    if (forLibFM) {
+        edgesToCSV(outFilename, edges);
+    } else {
+        std::vector<std::pair<std::vector<double>, int> > features = generateFeatures(g, gPos, gNeg, edges);
+        featuresToCSV(outFilename, features);
+    }
 }
 
 void printUsage(ezOptionParser &opt) {
@@ -246,75 +262,85 @@ void prepareOptions(ezOptionParser &opt) {
 	opt.example = "prepare -wi <path_to_wiki_input_file> -wo <path_to_wiki_out_file>\n";
     
     opt.add(
-            "",
-            0,
-            0,
-            0,
-            "Display usage instructions.",
-            "-h",
-            "-help",
-            "--help"
-            );
+        "",
+        0,
+        0,
+        0,
+        "Display usage instructions.",
+        "-h",
+        "-help",
+        "--help"
+    );
     
     opt.add(
-            "",
-            0,
-            1,
-            0,
-            "Path to epinions input file.",
-            "-ei",
-            "--epinions-input"
-            );
+        "",
+        0,
+        0,
+        0,
+        "Only print edges",
+        "-e",
+        "--edges"
+    );
     
     opt.add(
-            "",
-            0,
-            1,
-            0,
-            "Path to epinions output file.",
-            "-eo",
-            "--epinions-output"
-            );
+        "",
+        0,
+        1,
+        0,
+        "Path to epinions input file.",
+        "-ei",
+        "--epinions-input"
+    );
     
     opt.add(
-            "",
-            0,
-            1,
-            0,
-            "Path to slashdot input file.",
-            "-si",
-            "--slashdot-input"
-            );
+        "",
+        0,
+        1,
+        0,
+        "Path to epinions output file.",
+        "-eo",
+        "--epinions-output"
+    );
     
     opt.add(
-            "",
-            0,
-            1,
-            0,
-            "Path to slashdot output file.",
-            "-so",
-            "--slashdot-output"
-            );
+        "",
+        0,
+        1,
+        0,
+        "Path to slashdot input file.",
+        "-si",
+        "--slashdot-input"
+    );
     
     opt.add(
-            "",
-            0,
-            1,
-            0,
-            "Path to wiki input file.",
-            "-wi",
-            "--wiki-input"
-            );
+        "",
+        0,
+        1,
+        0,
+        "Path to slashdot output file.",
+        "-so",
+        "--slashdot-output"
+    );
     
     opt.add(
-            "",
-            0,
-            1,
-            0,
-            "Path to wiki output file.",
-            "-wo",
-            "--wiki-output"
-            );
+        "",
+        0,
+        1,
+        0,
+        "Path to wiki input file.",
+        "-wi",
+        "--wiki-input"
+    );
+    
+    opt.add(
+        "",
+        0,
+        1,
+        0,
+        "Path to wiki output file.",
+        "-wo",
+        "--wiki-output"
+    );
 }
 
 int main(int argc, const char *argv[]) {
@@ -337,7 +363,7 @@ int main(int argc, const char *argv[]) {
         opt.get("-ei")->getString(inputFile);
         std::string outputFile;
         opt.get("-eo")->getString(outputFile);
-        readEpinionsOrSlashdotFileAndMakeCSV(inputFile, outputFile);
+        readEpinionsOrSlashdotFileAndMakeCSV(inputFile, outputFile, opt.isSet("-e"));
     }
     
     if (opt.isSet("-si")) {
@@ -349,7 +375,7 @@ int main(int argc, const char *argv[]) {
         opt.get("-si")->getString(inputFile);
         std::string outputFile;
         opt.get("-so")->getString(outputFile);
-        readEpinionsOrSlashdotFileAndMakeCSV(inputFile, outputFile);
+        readEpinionsOrSlashdotFileAndMakeCSV(inputFile, outputFile, opt.isSet("-e"));
     }
     
     if (opt.isSet("-wi")) {
@@ -361,7 +387,7 @@ int main(int argc, const char *argv[]) {
         opt.get("-wi")->getString(inputFile);
         std::string outputFile;
         opt.get("-wo")->getString(outputFile);
-        readWikiFileAndMakeCSV(inputFile, outputFile);
+        readWikiFileAndMakeCSV(inputFile, outputFile, opt.isSet("-e"));
     }
     
     return 0;

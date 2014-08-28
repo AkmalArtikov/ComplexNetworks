@@ -21,14 +21,15 @@ def balanceData(Xs, Ys):
     Ys = [1] * len(XsPos) + [-1] * len(XsNeg)
     return Xs, Ys
 
-def printScore(Xs, Ys, features_range=None, em=0, tp=''):
+def printScore(Xs, Ys, features_range=None, em=0, tp='', balance=False):
     data = zip(Xs, Ys)
     filtered = []
     for d in data:
         if d[0][4] >= em:
             filtered.append(d)
     Xs, Ys = zip(*data)
-    Xs, Ys = balanceData(Xs, Ys)
+    if balance:
+        Xs, Ys = balanceData(Xs, Ys)
     data = zip(Xs, Ys)
     shuffle(data)
     Xs, Ys = zip(*data)
@@ -50,6 +51,9 @@ if __name__ == "__main__":
     parser.add_option("-a", "--all",
                 action="store_true", dest="all", default=False,
                 help="Print score using all features")
+    parser.add_option("-b", "--balance",
+                action="store_true", dest="balance", default=False,
+                help="Balance data")
     (options, args) = parser.parse_args()
 
     df = pd.read_csv(options.input, header=None)
@@ -57,11 +61,11 @@ if __name__ == "__main__":
     Ys = np.asarray(df[23])
     if options.degree:
         for em in [0, 10, 25]:
-            printScore(Xs, Ys, features_range=(0, 7), em=em, tp="degree")
+            printScore(Xs, Ys, features_range=(0, 7), em=em, tp="degree", balance=options.balance)
     if options.triads:
         for em in [0, 10, 25]:
-            printScore(Xs, Ys, features_range=(7, 23), em=em, tp="triads")
+            printScore(Xs, Ys, features_range=(7, 23), em=em, tp="triads", balance=options.balance)
     if options.all:
         for em in [0, 10, 25]:
-            printScore(Xs, Ys, features_range=None, em=em, tp="all")
+            printScore(Xs, Ys, features_range=None, em=em, tp="all", balance=options.balance)
     
