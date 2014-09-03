@@ -27,15 +27,17 @@ def printScore(Xs, Ys, features_range=None, em=0, tp=''):
     for d in data:
         if d[0][4] >= em:
             filtered.append(d)
-    Xs, Ys = zip(*data)
+    Xs, Ys = zip(*filtered)
     Xs, Ys = balanceData(Xs, Ys)
     data = zip(Xs, Ys)
     shuffle(data)
     Xs, Ys = zip(*data)
     if features_range is not None:
         Xs = zip(*zip(*Xs)[features_range[0]:features_range[1]])
+    Xs = np.asarray(Xs)
+    Ys = np.asanyarray(Ys)
     
-    scores = cross_validation.cross_val_score(LogisticRegression(), Xs, Ys, scoring='roc_auc', n_jobs=-1, cv=10)
+    scores = cross_validation.cross_val_score(LogisticRegression(), Xs, Ys, scoring='roc_auc', cv=10, n_jobs=-1)
     print("Accuracy (Em=%d, features=%s): %0.2f (+/- %0.2f)" % (em, tp, scores.mean() * 100, scores.std() * 200))
 
 if __name__ == "__main__":
