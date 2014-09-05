@@ -1,8 +1,8 @@
 all:
-	cd src/libfm; make all
+	mkdir bin; cd src/libfm; make all
 
 libFM:
-	cd src/libfm; make libFM
+	mkdir bin; cd src/libfm; make libFM
 
 clean:
 	cd src/libfm; make clean
