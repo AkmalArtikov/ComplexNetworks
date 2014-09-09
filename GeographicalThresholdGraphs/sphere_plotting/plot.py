@@ -1,13 +1,6 @@
 import cairo
-import codecs
-import dateutil.parser
 import igraph
 import numpy
-import re
-import random
-import math
-import time
-import datetime
 
 def project2D(layout, alpha, beta):
     '''
@@ -28,7 +21,7 @@ def project2D(layout, alpha, beta):
 def drawGraph2D(graph, coords, fileName):
     layout = graph.layout("drl")
 
-    for i in range(0, size):
+    for i in range(0, len(coords)):
         layout[i] = coords[i]
 
     plot = igraph.plot(graph, bbox=(0, 0, 1280, 1280), layout=layout)
@@ -42,7 +35,7 @@ def drawGraph3D(graph, coords, angle, fileName):
     # Setup some vertex attributes and calculate the projection
     layout = graph.layout("sphere")
 
-    for i in range(0, size):
+    for i in range(0, len(coords)):
         layout[i] = coords[i]
 
     graph.vs['degree'] = graph.degree()
@@ -121,83 +114,3 @@ def drawGraph3D(graph, coords, angle, fileName):
 
     # Output the surface
     surf.write_to_png(fileName)
-
-def generate_sphere(dimension, size):
-    coords = []
-
-    for i in range(0, size):
-        radius = 0.0
-        vector = []
-
-        for j in range(0, dimension):
-            vector.append(random.normalvariate(0, 1))
-            radius += vector[j]**2
-
-        radius = math.sqrt(radius)
-        coords.append([x / radius for x in vector])
-
-    return coords
-
-def get_edges(graph, coords, threshold):
-    for i in range(0, len(coords)):
-        for j in range (0, len(coords)):
-            if i != j:
-                path = 0.0
-                for k in range(0, len(coords[0])):
-                    path += (coords[i][k] - coords[j][k])**2
-                path = math.sqrt(path)
-
-                if path < threshold:
-                    graph.add_edge(i, j)
-    return graph
-
-def get_graph(dimension, size, threshold):
-    g = igraph.Graph()
-    g.add_vertices(size)
-
-    coords = generate_sphere(dimension=dimension, size=size)
-    g = get_edges(graph=g, coords=coords, threshold=threshold)
-
-    return g, coords
-
-def generate_report(dimension, size, threshold, file_name, start_time):
-    file = open(file_name + ".txt", "w")
-
-    file.write("Network generated with next parameters: \n")
-    file.write("   -Dimension: {0} \n".format(dimension))
-    file.write("   -Vertices: {0} \n".format(size))
-    file.write("   -Threshold: {0} \n".format(threshold))
-    file.write("   -Time: {0} seconds \n".format(time.time() - start_time))
-
-    file.close()
-
-dimension = 3
-size = 100
-threshold = 0.25
-visualise = False
-
-start_time = time.time()
-
-graph, coords = get_graph(dimension=dimension, size=size, threshold=threshold)
-
-file_name = "{0} vertices_{1} dimension_{2} threshold ".format(size, dimension, threshold)
-file_name = "networks/" + file_name
-ts = time.time()
-
-st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
-st = st.replace(":", "_")
-file_name += st
-
-print file_name
-
-generate_report(dimension=dimension, size=size, threshold=threshold, file_name=file_name, start_time=start_time)
-
-if dimension == 3 and visualise:
-    drawGraph3D(graph, coords, [0, 0, 0], file_name + ".jpg")
-if dimension == 2 and visualise:
-    drawGraph2D(graph, coords, file_name + ".jpg")
-
-#TODO 2D plotting with cairo
-#TODO degree_distribution, clasterization_coef into report
-#TODO large graphs??? visualise? how much time need to generate? square-time complexity
-#TODO check ideas with different weight distribution
