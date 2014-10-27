@@ -1,6 +1,7 @@
 import igraph
 import math
 import numpy as np
+import time
 
 def generate_sphere(dimension, size):
     coords = np.zeros(dimension)
@@ -28,8 +29,8 @@ def get_edges(graph, coords, threshold, weights):
 
             value = dot * (weights[i] * weights[j])
 
-            if value >= threshold:
-                graph.add_edge(i, j)
+            # if value >= threshold:
+            #     graph.add_edge(i, j)
 
     return graph
 
@@ -39,14 +40,27 @@ def get_weights(size, alpha, mode):
 
     return weights
 
-def get_graph(dimension, size, threshold, alpha, mode):
+def get_graph(dimension, size, threshold, alpha, mode, start_time):
     g = igraph.Graph(directed=None)
     g.add_vertices(size)
 
+    print "   -Time: {0} seconds \n".format(time.time() - start_time)
+
+
     coords = generate_sphere(dimension=dimension, size=size)
+
+    print "   -Time: {0} seconds \n".format(time.time() - start_time)
 
     weights = get_weights(size=size, alpha=alpha, mode=mode)
 
+    for v in weights:
+        print str(v) + " "
+
+
+    print "   -Time: {0} seconds \n".format(time.time() - start_time)
+
     g = get_edges(graph=g, coords=coords, threshold=threshold, weights=weights)
+
+    print "   -TimSDSDe: {0} seconds \n".format(time.time() - start_time)
 
     return g, coords, weights

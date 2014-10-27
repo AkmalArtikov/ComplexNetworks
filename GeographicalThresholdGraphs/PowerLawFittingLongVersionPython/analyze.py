@@ -1,4 +1,5 @@
 import string
+import time
 
 def get_degree_distribution(graph):
     hist = graph.degree_distribution().to_string()
@@ -35,4 +36,4 @@ def get_cut_degree_distribution(graph, threshold, mode, size, weights):
         if weights[i] <= (threshold + 0.0) / (mode + 0.0):
             degree_distribution[vs.degree()] += 1
 
-    return degree_distribution
+    return degree_distribution[8:]

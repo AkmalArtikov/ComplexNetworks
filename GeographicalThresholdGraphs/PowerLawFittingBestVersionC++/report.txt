@@ -1,0 +1,55 @@
+size - 10000; dimension - 3; alpha - 4; mode - 0.5; threshold - 0.75
+Graph has 10000 vertices and 2230837 edges
+
+FULL POWER LAW with 10000 vertices 
+1.97593 158 0.0538349 3.48697e-16
+NOT FULL POWER LAW with 9345 vertices 
+2.03198 97 0.0764336 0
+
+It took 8.859 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.5; threshold - 0.75
+Graph has 10000 vertices and 2210614 edges
+
+FULL POWER LAW with 10000 vertices 
+1.87256 98 0.0581681 6.1028e-26
+NOT FULL POWER LAW with 9351 vertices 
+2.05357 109 0.0778906 1.07499e-39
+
+It took 8.968 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.5; threshold - 0.75
+Graph has 10000 vertices and 2223266 edges
+
+FULL POWER LAW with 10000 vertices 
+16.7937 3638 0.0611861 0.999672
+NOT FULL POWER LAW with 9367 vertices 
+2.00945 101 0.0818459 0
+
+It took 9.187 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.5; threshold - 0.75
+Graph has 10000 vertices and 2119619 edges
+
+FULL POWER LAW with 10000 vertices 
+2.03826 208 0.054473 9.0246e-13
+NOT FULL POWER LAW with 9395 vertices 
+2.37503 224 0.0803363 1.96178e-22
+
+It took 8.672 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.5; threshold - 0.75
+Graph has 10000 vertices and 2185535 edges
+
+FULL POWER LAW with 10000 vertices 
+1.84589 87 0.0574635 8.71066e-27
+NOT FULL POWER LAW with 9378 vertices 
+1.98436 91 0.0747786 0
+
+It took 9.234 seconds
+ ----------------------------------------
+
