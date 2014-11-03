@@ -21,6 +21,8 @@ def generate_sphere(dimension, size):
     return coords[1:]
 
 def get_edges(graph, coords, threshold, weights):
+    edges = []
+
     for i in range(0, len(coords)):
         for j in range(i + 1, len(coords)):
             x = coords[i]
@@ -29,9 +31,10 @@ def get_edges(graph, coords, threshold, weights):
 
             value = dot * (weights[i] * weights[j])
 
-            # if value >= threshold:
-            #     graph.add_edge(i, j)
+            if value >= threshold:
+                 edges += [(i, j)]
 
+    graph.add_edge(edges)
     return graph
 
 def get_weights(size, alpha, mode):
