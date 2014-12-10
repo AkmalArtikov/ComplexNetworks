@@ -8,33 +8,34 @@ import math
 from random import shuffle
 import matplotlib.pyplot as plt
 
-def plot_one(degrees, score, title, is_line=False, is_log=False, alpha=0.0):
-    plt.plot(degrees, score, linestyle="None", marker='+')
+def plot_one(degrees, score, title, size, dimension, alpha_pareto, mode_pareto,
+                 threshold, is_line=False, is_log=False, alpha=0.0, file_name="temp_degrees/temp.txt"):
+    plt.figure(figsize=(12, 10))
+    label = ""
+    if is_log:
+        label = "log(degree_freq)"
+    else:
+        label = "degree_freq"
+
+    plt.plot(degrees, score, linestyle="None", marker='+', label=label)
 
     if is_log:
-        #polyfit
-        #line = np.polyfit(degrees, score, 1)
-        #x = [min(degrees), max(degrees)]
-        #y = [line[0] * x[0] + line[1], line[0] * x[1] + line[1]]
-
         x = [degrees[0], degrees[len(degrees) - 1]]
         b = score[0] - alpha * x[0]
         y = [x[0] * alpha + b, x[1] * alpha + b]
 
-        print x
-        print y
-        plt.plot(x, y)
+        label = "power-law approximation"
+        plt.plot(x, y, label=label)
 
     if is_line:
         x = []
         y = []
 
-        f = open('temp_bad.txt')
+        f = open('temp_degrees/temp_bad.txt')
         lines = f.readlines()
         lines[0] = lines[0][:-1]
         f.close()
         bounds = lines[0].split(" ")
-        print bounds
 
         if is_log:
             x = [math.log(float(bounds[0]), 2), math.log(float(bounds[0]), 2)]
@@ -43,16 +44,38 @@ def plot_one(degrees, score, title, is_line=False, is_log=False, alpha=0.0):
             plt.plot([min(degrees)], min(score))
             x = [bounds[0], bounds[0]]
 
-        print x
-
         y = [0, max(score)]
-        plt.plot(x, y)
+        label = "good and bad vertices threshold"
+        plt.plot(x, y, label=label)
+
+    title = "size {0}, dimension {1}, alpha_pareto {2}, mode_pareto {3}, threshold {4}. {5}".format(size, dimension,
+                                                                                                    alpha_pareto,
+                                                                                                    mode_pareto,
+                                                                                                    threshold,
+                                                                                                    title)
 
     plt.ylim([0,max(score)])
     plt.ylabel('Frequency')
     plt.xlabel('Degrees')
     plt.title(title)
-    plt.show()
+
+    name = "results_graphs/"
+    if file_name == "temp_degrees/temp.txt":
+        name += "full"
+
+    if file_name == "temp_degrees/temp_good.txt":
+        name += "good"
+
+    if file_name == "temp_degrees/temp_bad.txt":
+        name += "bad"
+
+    if is_log:
+        name += "_log"
+    else:
+        name += "_norm"
+    plt.legend(loc='upper right')
+    plt.savefig(name + '.png')
+    #plt.show()
 
 def plot_figures(file_name):
     f = open(file_name)
@@ -62,10 +85,17 @@ def plot_figures(file_name):
     lines[2] = lines[2][:-1]
     f.close()
 
-    alpha = -float(lines[2])
-
     bounds = lines[0].split(" ")
     degrees = lines[1].split(" ")
+    params = lines[2].split(" ")
+
+    alpha = -float(params[0])
+    size = int(params[1])
+    dimension = int(params[2])
+    alpha_pareto = int(params[3])
+    mode_pareto = float(params[4])
+    threshold = float(params[5])
+
 
     x = range(int(bounds[0]), int(bounds[1]) + 1)
 
@@ -81,23 +111,68 @@ def plot_figures(file_name):
     for i in range(len(degrees)):
         new_y.append(math.log(int(degrees[i]) + 0.0000001, 2))
 
-    #print new_x
-    #print new_y
-
-    #print len(new_x)
-    #print len(new_y)
-
-    if file_name == 'temp.txt':
-        plot_one(x, y, "freq / degree", is_line=True, is_log=False)
-        plot_one(new_x, new_y, "log(freq) / log(degree)", is_line=True, is_log=True, alpha=alpha)
+    if file_name == 'temp_degrees/temp.txt':
+        plot_one(x, y, "freq / degree", size, dimension, alpha_pareto, mode_pareto,
+                 threshold, is_line=True, is_log=False, file_name=file_name)
+        plot_one(new_x, new_y, "log(freq) / log(degree)", size, dimension, alpha_pareto, mode_pareto,
+                 threshold, is_line=True, is_log=True, alpha=alpha, file_name=file_name)
     else:
-        plot_one(x, y, "freq / degree", is_log=False)
-        plot_one(new_x, new_y, "log(freq) / log(degree)", is_log=True, alpha=alpha)
+        plot_one(x, y, "freq / degree", size, dimension, alpha_pareto, mode_pareto,
+                 threshold, is_log=False, file_name=file_name)
+        plot_one(new_x, new_y, "log(freq) / log(degree)", size, dimension, alpha_pareto, mode_pareto,
+                 threshold, is_log=True, alpha=alpha, file_name=file_name)
 
-good = 'temp_good.txt'
-bad = 'temp_bad.txt'
-full = 'temp.txt'
+def plot_figure_commute(file_name):
+    f = open(file_name)
+    lines = f.readlines()
+    lines[0] = lines[0][:-1]
+    f.close()
+
+    probs = lines[0].split(" ")
+    x = xrange(len(probs))
+
+    ind = 0
+    for i in xrange(len(probs)):
+        if float(probs[i]) < 1.0:
+            ind = i
+            break
+
+    x = range(ind, len(probs))
+    probs = probs[ind:]
+
+    plt.figure(figsize=(12, 10))
+    plt.plot(x, probs, label="D(degree > x)")
+    plt.ylabel('Percentage of vertices which degree> x')
+    plt.xlabel('Degrees')
+    plt.title("Commute function for degrees")
+    plt.legend(loc='upper right')
+
+    name = "results_graphs/"
+    if file_name == "temp_degrees/commute_temp.txt":
+        name += "ful_commute"
+
+    plt.savefig(name + '.png')
+
+    new_x = [math.log(xx + 0.000000001, 2) for xx in x]
+    new_probs = [math.log(float(xx) * len(x) + 0.000000001, 2) for xx in probs]
+
+    plt.figure(figsize=(12, 10))
+    plt.plot(new_x, new_probs, label="log(D(degree > x))")
+    plt.legend(loc='upper right')
+    plt.title("Commute function for degrees in log/log coords")
+    plt.ylabel('log Number of vertices which degree> x')
+    plt.xlabel('log Degrees')
+
+    plt.savefig(name + '_log' + '.png')
+
+
+
+good = 'temp_degrees/temp_good.txt'
+bad = 'temp_degrees/temp_bad.txt'
+full = 'temp_degrees/temp.txt'
+commute_full = 'temp_degrees/commute_temp.txt'
 
 plot_figures(good)
 plot_figures(bad)
 plot_figures(full)
+plot_figure_commute(commute_full)

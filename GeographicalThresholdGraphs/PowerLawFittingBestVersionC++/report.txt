@@ -499,3 +499,1345 @@ It took 6038.5 seconds
  ----------------------------------------
 
 size - 300000; dimension - 3; alpha - 8; mode - 0.5; threshold - 0.75
+Graph has 300000 vertices and 137537127 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 298874 vertices 
+1.80036 129 0.0351193 0
+FULL POWER LAW with 300000 vertices 
+1.78537 129 0.0310521 0
+NOT FULL POWER LAW BAD VERTICES with 1126 vertices 
+3.3587 28161 0.108616 7.50625e-12
+
+It took 4098.4 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 2; mode - 0.5; threshold - 0.75
+Graph has 300000 vertices and -1301222830 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 225243 vertices 
+2.64644 17591 0.123809 0
+FULL POWER LAW with 300000 vertices 
+2.08451 17591 0.107574 0
+NOT FULL POWER LAW BAD VERTICES with 74757 vertices 
+3.81264 68520 0.161971 0
+
+It took 6484.67 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 2; mode - 0.5; threshold - 0.75
+Graph has 300000 vertices and -1306966460 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 225213 vertices 
+63.5034 66218 0.115628 1.12702e-32
+FULL POWER LAW with 300000 vertices 
+2 1000 0.92963 0
+NOT FULL POWER LAW BAD VERTICES with 74787 vertices 
+3.83005 68686 0.164121 0
+
+It took 6389.91 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 12; mode - 0.5; threshold - 0.75
+Graph has 300000 vertices and 11101386 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 299918 vertices 
+1.80388 11 0.0192602 0
+FULL POWER LAW with 300000 vertices 
+1.80159 11 0.0185556 0
+NOT FULL POWER LAW BAD VERTICES with 82 vertices 
+3.19205 20185 0.161779 0.0273479
+
+It took 3725.84 seconds
+ ----------------------------------------
+
+size - 500000; dimension - 3; alpha - 12; mode - 0.5; threshold - 0.75
+size - 500000; dimension - 3; alpha - 4; mode - 0.5; threshold - 0.75
+Graph has 500000 vertices and 1106145371 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 468591 vertices 
+1.95167 3835 0.0775323 0
+FULL POWER LAW with 500000 vertices 
+1.8337 3835 0.0594081 0
+NOT FULL POWER LAW BAD VERTICES with 31409 vertices 
+3.49544 76726 0.127885 0
+
+It took 15254.6 seconds
+ ----------------------------------------
+
+size - 20000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 20000 vertices and 8407025 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 19007 vertices 
+86.0287 3352 0.0549525 0.999999
+FULL POWER LAW with 20000 vertices 
+3.59217 3352 0.140258 8.05935e-18
+NOT FULL POWER LAW BAD VERTICES with 993 vertices 
+3.73714 3476 0.138898 8.82925e-17
+
+It took 23.312 seconds
+ ----------------------------------------
+
+size - 20000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 20000 vertices and 8740050 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 18929 vertices 
+2.16572 364 0.0912277 0
+FULL POWER LAW with 20000 vertices 
+1.9708 364 0.0721527 0
+NOT FULL POWER LAW BAD VERTICES with 1071 vertices 
+3.91169 3490 0.130048 9.21827e-16
+
+It took 23.171 seconds
+ ----------------------------------------
+
+size - 20000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+size - 10000; dimension - 4; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 1527858 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9520 vertices 
+2.26345 149 0.0756233 1.25546e-20
+FULL POWER LAW with 10000 vertices 
+2.01662 149 0.0510543 1.01525e-10
+NOT FULL POWER LAW BAD VERTICES with 480 vertices 
+3.20554 1312 0.124325 1.29372e-06
+
+It took 6.234 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 4; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 1575448 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9496 vertices 
+2.00371 89 0.0878459 0
+FULL POWER LAW with 10000 vertices 
+1.86283 89 0.070649 7.48223e-29
+NOT FULL POWER LAW BAD VERTICES with 504 vertices 
+3.35294 1318 0.126605 3.65258e-07
+
+It took 6.516 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 4; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 1602367 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9484 vertices 
+2.04035 98 0.087221 1.93358e-38
+FULL POWER LAW with 10000 vertices 
+1.88432 98 0.0667955 1.01529e-24
+NOT FULL POWER LAW BAD VERTICES with 516 vertices 
+3.31373 1325 0.137723 1.62864e-08
+
+It took 6.562 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 4; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 1570549 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9480 vertices 
+1.91189 61 0.0837567 0
+FULL POWER LAW with 10000 vertices 
+1.80293 61 0.0680659 5.38988e-34
+NOT FULL POWER LAW BAD VERTICES with 520 vertices 
+3.37494 1311 0.0976804 0.000135633
+
+It took 6.531 seconds
+ ----------------------------------------
+
+size - 500000; dimension - 4; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 500000 vertices and 3956216805 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 474395 vertices 
+1.83127 2307 0.0875652 0
+FULL POWER LAW with 500000 vertices 
+1.74663 2307 0.0728867 0
+NOT FULL POWER LAW BAD VERTICES with 25605 vertices 
+3.30265 64448 0.107829 0
+
+It took 15299 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 1923034200 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 284611 vertices 
+1.89587 2420 0.0864941 0
+FULL POWER LAW with 300000 vertices 
+1.7998 2420 0.071956 0
+NOT FULL POWER LAW BAD VERTICES with 15389 vertices 
+3.7872 51956 0.122501 0
+
+It took 5160.44 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 4; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 1434224797 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 284429 vertices 
+1.95125 2210 0.0867449 0
+FULL POWER LAW with 300000 vertices 
+1.8276 2210 0.0685662 0
+NOT FULL POWER LAW BAD VERTICES with 15571 vertices 
+3.32512 38855 0.105508 0
+
+It took 5477.97 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 9; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 596947720 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 284691 vertices 
+1.93937 885 0.0849006 0
+FULL POWER LAW with 300000 vertices 
+1.79395 885 0.061355 0
+NOT FULL POWER LAW BAD VERTICES with 15309 vertices 
+2.63122 16210 0.0721084 0
+
+It took 10005.1 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 10; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 529517842 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 284639 vertices 
+1.89359 642 0.083801 0
+FULL POWER LAW with 300000 vertices 
+1.76468 642 0.0612923 0
+NOT FULL POWER LAW BAD VERTICES with 15361 vertices 
+2.57288 14228 0.0657106 0
+
+It took 11017.7 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 501064027 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 296553 vertices 
+1.84844 796 0.0616184 0
+FULL POWER LAW with 300000 vertices 
+1.8064 796 0.0527546 0
+NOT FULL POWER LAW BAD VERTICES with 3447 vertices 
+3.69936 40074 0.108654 2.00892e-35
+
+It took 4580.17 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+size - 300000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 135435592 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 299172 vertices 
+1.79914 207 0.043672 0
+FULL POWER LAW with 300000 vertices 
+1.78393 207 0.0397354 0
+NOT FULL POWER LAW BAD VERTICES with 828 vertices 
+3.69198 32905 0.100439 1.27986e-07
+
+It took 3793.91 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 2; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 7364630091 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 232192 vertices 
+62.9222 72051 0.113597 1.28954e-32
+FULL POWER LAW with 300000 vertices 
+3.98621 72051 0.164869 0
+NOT FULL POWER LAW BAD VERTICES with 67808 vertices 
+4.17834 74788 0.161153 0
+
+It took 6875.39 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 3; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 3770637259 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 267506 vertices 
+2.11315 6880 0.108801 0
+FULL POWER LAW with 300000 vertices 
+1.90035 6880 0.0903796 0
+NOT FULL POWER LAW BAD VERTICES with 32494 vertices 
+3.92103 61109 0.142491 0
+
+It took 10976.2 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 35971987 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 299812 vertices 
+1.94552 263 0.0317105 1.48755e-32
+FULL POWER LAW with 300000 vertices 
+1.92763 263 0.0277007 4.55842e-25
+NOT FULL POWER LAW BAD VERTICES with 188 vertices 
+3.43791 27567 0.0969483 0.0583736
+
+It took 3869.11 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 41154 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9992 vertices 
+1.95602 3 0.0174043 0.192897
+FULL POWER LAW with 10000 vertices 
+1.94546 3 0.014762 0.368391
+NOT FULL POWER LAW BAD VERTICES with 8 vertices 
+2.82469 908 0.261579 0.644259
+
+It took 4.422 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 39031 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9995 vertices 
+2.03048 15 0.0294286 0.464742
+FULL POWER LAW with 10000 vertices 
+2.00839 15 0.0260725 0.61766
+NOT FULL POWER LAW BAD VERTICES with 5 vertices 
+2.79653 815 0.248345 0.917379
+
+It took 4.468 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 38819 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9994 vertices 
+1.86613 3 0.0244474 0.033382
+FULL POWER LAW with 10000 vertices 
+1.85941 3 0.0226238 0.0597214
+NOT FULL POWER LAW BAD VERTICES with 6 vertices 
+2.63909 806 0.326122 0.546042
+
+It took 4.406 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 37319 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9994 vertices 
+2.06337 8 0.0111142 0.995504
+FULL POWER LAW with 10000 vertices 
+2.04227 8 0.0130597 0.971519
+NOT FULL POWER LAW BAD VERTICES with 6 vertices 
+2.51452 910 0.391454 0.316726
+
+It took 4.453 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 49643 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9991 vertices 
+1.91604 4 0.0245196 0.0370131
+FULL POWER LAW with 10000 vertices 
+1.90488 4 0.0221824 0.0756926
+NOT FULL POWER LAW BAD VERTICES with 9 vertices 
+2.60286 847 0.320096 0.315018
+
+It took 4.468 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 39419 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9995 vertices 
+2.01595 13 0.0319276 0.289211
+FULL POWER LAW with 10000 vertices 
+1.99624 13 0.0279358 0.447356
+NOT FULL POWER LAW BAD VERTICES with 5 vertices 
+2.61924 864 0.397363 0.408759
+
+It took 4.281 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 41336 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9993 vertices 
+1.89262 4 0.0232594 0.100714
+FULL POWER LAW with 10000 vertices 
+1.8831 4 0.0208875 0.1784
+NOT FULL POWER LAW BAD VERTICES with 7 vertices 
+3.21337 850 0.299556 0.556311
+
+It took 4.234 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 41791 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9993 vertices 
+2.05396 14 0.0198848 0.87356
+FULL POWER LAW with 10000 vertices 
+2.02332 14 0.0136397 0.996251
+NOT FULL POWER LAW BAD VERTICES with 7 vertices 
+2.83802 877 0.243153 0.802275
+
+It took 4.328 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 39979 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9993 vertices 
+2.02183 15 0.032617 0.351171
+FULL POWER LAW with 10000 vertices 
+1.99136 15 0.0288611 0.500171
+NOT FULL POWER LAW BAD VERTICES with 7 vertices 
+3.53997 943 0.272872 0.674449
+
+It took 4.328 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 39267 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9992 vertices 
+1.88962 5 0.0311931 0.0316249
+FULL POWER LAW with 10000 vertices 
+1.87633 5 0.0277542 0.074109
+NOT FULL POWER LAW BAD VERTICES with 8 vertices 
+2.7886 800 0.448303 0.0802565
+
+It took 4.343 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 10000 vertices and 4314628 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 7607 vertices 
+98.9655 1123 0.0747024 1
+FULL POWER LAW with 10000 vertices 
+2.84873 1123 0.11733 1.34817e-28
+NOT FULL POWER LAW BAD VERTICES with 2393 vertices 
+2.87404 1143 0.116469 1.18009e-27
+
+It took 7.765 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 3928198295 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 226969 vertices 
+2.55888 7102 0.10408 0
+FULL POWER LAW with 300000 vertices 
+2 7102 0.0664176 0
+NOT FULL POWER LAW BAD VERTICES with 73031 vertices 
+2.85857 33812 0.108178 0
+
+It took 6949.5 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 15101122203 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 129499 vertices 
+61.5105 71958 0.13092 0
+FULL POWER LAW with 300000 vertices 
+2.7731 71958 0.130016 0
+NOT FULL POWER LAW BAD VERTICES with 170501 vertices 
+2.82937 74643 0.12743 0
+
+It took 13583.6 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 10; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 12671514949 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 130074 vertices 
+65.4022 46532 0.12329 0
+FULL POWER LAW with 300000 vertices 
+2.22823 46532 0.101468 0
+NOT FULL POWER LAW BAD VERTICES with 169926 vertices 
+2.2467 48244 0.102477 0
+
+It took 16185.6 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 10; alpha - 4; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 12647144373 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 129631 vertices 
+2 1000 0.952805 0
+FULL POWER LAW with 300000 vertices 
+2 1000 0.952865 0
+NOT FULL POWER LAW BAD VERTICES with 170369 vertices 
+2.24598 48039 0.102851 0
+
+It took 15146 seconds
+
+END EXP
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.2
+Graph has 300000 vertices and 7534257181 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 131071 vertices 
+66.639 38747 0.123987 0
+FULL POWER LAW with 300000 vertices 
+3.03507 38747 0.150582 0
+NOT FULL POWER LAW BAD VERTICES with 168929 vertices 
+3.1123 40110 0.147752 0
+
+It took 4372.69 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.2
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.2
+Graph has 300000 vertices and 7571405660 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 130237 vertices 
+1.49672 1000 0.777578 0
+FULL POWER LAW with 300000 vertices 
+2 1000 0.951503 0
+NOT FULL POWER LAW BAD VERTICES with 169763 vertices 
+3.11964 40314 0.147957 0
+
+It took 4070.3 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.4
+Graph has 300000 vertices and 1629932084 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 282180 vertices 
+2 1000 0.442859 0
+FULL POWER LAW with 300000 vertices 
+2 1000 0.443765 0
+NOT FULL POWER LAW BAD VERTICES with 17820 vertices 
+3.46434 40052 0.123501 0
+
+It took 4820.95 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.4
+Graph has 300000 vertices and 1645594053 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 281941 vertices 
+1.92144 1874 0.0806601 0
+FULL POWER LAW with 300000 vertices 
+1.81211 1874 0.0635301 0
+NOT FULL POWER LAW BAD VERTICES with 18059 vertices 
+3.49186 40205 0.122375 0
+
+It took 8109.56 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.4
+Graph has 300000 vertices and 1623262649 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 282147 vertices 
+1.94461 2033 0.0799373 0
+FULL POWER LAW with 300000 vertices 
+1.82748 2033 0.0622465 0
+NOT FULL POWER LAW BAD VERTICES with 17853 vertices 
+3.488 39965 0.122779 0
+
+It took 4797.56 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Graph has 300000 vertices and 505224132 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 296485 vertices 
+1.87968 939 0.0626193 0
+FULL POWER LAW with 300000 vertices 
+1.83122 939 0.0527983 0
+NOT FULL POWER LAW BAD VERTICES with 3515 vertices 
+3.73184 40269 0.110294 4.43495e-37
+
+It took 4270.14 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.8
+Graph has 300000 vertices and 199794275 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 299003 vertices 
+1.94001 810 0.0485031 0
+FULL POWER LAW with 300000 vertices 
+1.90416 810 0.0413378 0
+NOT FULL POWER LAW BAD VERTICES with 997 vertices 
+3.76378 40011 0.112668 2.42907e-11
+
+It took 9028.11 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 300000 vertices and 3361120625 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 250309 vertices 
+2.23772 5471 0.100568 0
+FULL POWER LAW with 300000 vertices 
+1.92758 5471 0.0747079 0
+NOT FULL POWER LAW BAD VERTICES with 49691 vertices 
+3.342 40172 0.130954 0
+
+It took 4982.94 seconds
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 300000 vertices and 3361051007 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 250478 vertices 
+2 1000 0.810474 0
+FULL POWER LAW with 300000 vertices 
+1.5929 1000 0.627637 0
+NOT FULL POWER LAW BAD VERTICES with 49522 vertices 
+3.33971 40325 0.130347 0
+
+It took 4976.14 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3772779 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8289 vertices 
+8.10871 1000 0.175378 1.03788e-17
+FULL POWER LAW with 10000 vertices 
+2.81022 1000 0.146483 0
+NOT FULL POWER LAW BAD VERTICES with 1711 vertices 
+3.44939 1372 0.147056 2.63512e-31
+
+It took 6.031 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3604344 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8413 vertices 
+1.3333 1 0.843737 0
+FULL POWER LAW with 10000 vertices 
+1.33329 1 0.843969 0
+NOT FULL POWER LAW BAD VERTICES with 1587 vertices 
+3.42692 1376 0.134446 7.25027e-24
+
+It took 4.328 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3817851 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8299 vertices 
+2.26486 200 0.109162 0
+FULL POWER LAW with 10000 vertices 
+1.93586 200 0.0848941 0
+NOT FULL POWER LAW BAD VERTICES with 1701 vertices 
+3.41707 1377 0.134849 4.31156e-26
+
+It took 4.328 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3843408 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8313 vertices 
+8.02977 1000 0.165763 2.03305e-17
+FULL POWER LAW with 10000 vertices 
+2.79892 1000 0.13424 5.63778e-38
+NOT FULL POWER LAW BAD VERTICES with 1687 vertices 
+3.42916 1397 0.133013 2.13182e-25
+
+It took 4.39 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3834252 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8294 vertices 
+8.30531 1000 0.13293 2.52002e-10
+FULL POWER LAW with 10000 vertices 
+2.76696 1000 0.145061 0
+NOT FULL POWER LAW BAD VERTICES with 1706 vertices 
+3.36354 1371 0.148594 2.44219e-32
+
+It took 5.64 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3635652 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8385 vertices 
+8.2771 1000 0.133304 6.66898e-10
+FULL POWER LAW with 10000 vertices 
+2.82275 1000 0.141802 2.34879e-39
+NOT FULL POWER LAW BAD VERTICES with 1615 vertices 
+3.47576 1382 0.123108 1.44621e-20
+
+It took 5.765 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3644064 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8344 vertices 
+58.9188 1285 0.0788726 0.908882
+FULL POWER LAW with 10000 vertices 
+3.30181 1285 0.129052 4.78969e-25
+NOT FULL POWER LAW BAD VERTICES with 1656 vertices 
+3.43311 1352 0.130252 6.26708e-24
+
+It took 5.75 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3621023 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8399 vertices 
+46.0404 1266 0.0813477 0.672627
+FULL POWER LAW with 10000 vertices 
+3.23834 1266 0.135263 4.00559e-27
+NOT FULL POWER LAW BAD VERTICES with 1601 vertices 
+3.39361 1351 0.13504 6.50722e-25
+
+It took 5.765 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3782205 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8336 vertices 
+65.0933 1335 0.0727666 0.994853
+FULL POWER LAW with 10000 vertices 
+3.30792 1335 0.135301 4.82343e-27
+NOT FULL POWER LAW BAD VERTICES with 1664 vertices 
+3.4964 1428 0.127954 2.4375e-22
+
+It took 5.734 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3789264 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8303 vertices 
+65.7784 1296 0.062216 0.986467
+FULL POWER LAW with 10000 vertices 
+3.26937 1296 0.141996 4.49619e-31
+NOT FULL POWER LAW BAD VERTICES with 1697 vertices 
+3.46518 1383 0.131213 8.13831e-25
+
+It took 5.781 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3619509 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8409 vertices 
+58.7262 1284 0.0783996 0.881402
+FULL POWER LAW with 10000 vertices 
+3.25113 1284 0.137365 2.18908e-27
+NOT FULL POWER LAW BAD VERTICES with 1591 vertices 
+3.40724 1357 0.128915 9.32894e-23
+
+It took 5.75 seconds
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3761408 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8314 vertices 
+96.3292 1369 0.0755924 1
+FULL POWER LAW with 10000 vertices 
+3.43886 1369 0.134567 3.70763e-26
+NOT FULL POWER LAW BAD VERTICES with 1686 vertices 
+3.51193 1400 0.131969 1.54302e-24
+
+It took 6.64 seconds
+Current local time and date: Thu Nov 27 02:16:51 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Graph has 10000 vertices and 3882793 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8296 vertices 
+51.3047 1319 0.0773979 0.817027
+FULL POWER LAW with 10000 vertices 
+3.28014 1319 0.138282 8.30969e-30
+NOT FULL POWER LAW BAD VERTICES with 1704 vertices 
+3.41337 1406 0.137108 9.54372e-27
+
+It took 5.812 seconds
+Current local time and date: Thu Nov 27 02:23:32 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 3710242 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8349 vertices 
+22.6464 1218 0.0831167 0.13702
+FULL POWER LAW with 10000 vertices 
+3.16352 1218 0.137017 1.64254e-30
+NOT FULL POWER LAW BAD VERTICES with 1651 vertices 
+3.49918 1405 0.13372 3.45383e-24
+
+It took 6.015 seconds
+Current local time and date: Thu Nov 27 02:33:10 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 3697745 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8365 vertices 
+49.5661 1285 0.0906166 0.650475
+FULL POWER LAW with 10000 vertices 
+3.2556 1285 0.132895 1.72998e-26
+NOT FULL POWER LAW BAD VERTICES with 1635 vertices 
+3.4346 1380 0.133711 1.58429e-24
+
+It took 5.812 seconds
+Current local time and date: Thu Nov 27 02:33:20 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 3817837 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 8315 vertices 
+48.9839 1324 0.0631974 0.990818
+FULL POWER LAW with 10000 vertices 
+3.33751 1324 0.125946 3.42181e-24
+NOT FULL POWER LAW BAD VERTICES with 1685 vertices 
+3.49186 1405 0.126616 1.31466e-22
+
+It took 6.281 seconds
+Current local time and date: Thu Nov 27 02:37:56 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.5
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 1011195 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9739 vertices 
+2.0832 90 0.0694323 6.65403e-18
+FULL POWER LAW with 10000 vertices 
+1.95163 90 0.0527054 3.98283e-11
+NOT FULL POWER LAW BAD VERTICES with 261 vertices 
+3.5994 1349 0.162297 2.77999e-06
+
+It took 5.171 seconds
+Current local time and date: Thu Nov 27 02:48:22 2014
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.5
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 300000 vertices and 883555600 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 292364 vertices 
+1.88009 1204 0.0699765 0
+FULL POWER LAW with 300000 vertices 
+1.81236 1204 0.057263 0
+NOT FULL POWER LAW BAD VERTICES with 7636 vertices 
+3.62621 40253 0.117641 0
+
+It took 4614.47 seconds
+Current local time and date: Thu Nov 27 04:07:09 2014
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.5
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 300000 vertices and 867748507 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 292603 vertices 
+1.9348 1528 0.0679395 0
+FULL POWER LAW with 300000 vertices 
+1.85345 1528 0.053698 0
+NOT FULL POWER LAW BAD VERTICES with 7397 vertices 
+3.57692 40082 0.121695 0
+
+It took 5567.62 seconds
+Current local time and date: Mon Dec  1 04:48:56 2014
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.7
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 300000 vertices and 305699267 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 298230 vertices 
+1.92901 959 0.053794 0
+FULL POWER LAW with 300000 vertices 
+1.88457 959 0.0450577 0
+NOT FULL POWER LAW BAD VERTICES with 1770 vertices 
+3.7466 40134 0.111696 1.91783e-19
+
+It took 4163.83 seconds
+Current local time and date: Mon Dec  1 19:23:35 2014
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.9
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 300000 vertices and 131199332 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 299458 vertices 
+1.91531 576 0.0455515 0
+FULL POWER LAW with 300000 vertices 
+1.89205 576 0.0403815 0
+NOT FULL POWER LAW BAD VERTICES with 542 vertices 
+3.91871 39994 0.11542 1.22276e-06
+
+It took 4555.89 seconds
+Current local time and date: Mon Dec  1 23:17:48 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.9
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 148606 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9983 vertices 
+2.08377 47 0.0429462 0.0301681
+FULL POWER LAW with 10000 vertices 
+2.03721 47 0.036109 0.0986404
+NOT FULL POWER LAW BAD VERTICES with 17 vertices 
+3.49176 1331 0.20337 0.482931
+
+It took 4.421 seconds
+Current local time and date: Tue Dec  9 02:35:09 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 532006 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9903 vertices 
+1.92991 41 0.0609976 6.0161e-14
+FULL POWER LAW with 10000 vertices 
+1.878 41 0.051867 1.98504e-10
+NOT FULL POWER LAW BAD VERTICES with 97 vertices 
+3.65236 1349 0.115316 0.155595
+
+It took 4.812 seconds
+Current local time and date: Tue Dec  9 04:24:10 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 555279 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9884 vertices 
+2 54 0.0610335 7.24528e-12
+FULL POWER LAW with 10000 vertices 
+1.92431 54 0.0480132 9.73923e-08
+NOT FULL POWER LAW BAD VERTICES with 116 vertices 
+3.79544 1341 0.13022 0.0418733
+
+It took 4.921 seconds
+Current local time and date: Tue Dec  9 04:25:32 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 533512 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9882 vertices 
+2.02148 49 0.0491272 3.421e-08
+FULL POWER LAW with 10000 vertices 
+1.94112 49 0.0349874 0.000172264
+NOT FULL POWER LAW BAD VERTICES with 118 vertices 
+3.81532 1347 0.136948 0.026771
+
+It took 4.858 seconds
+Current local time and date: Tue Dec  9 04:30:56 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 533433 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9887 vertices 
+1.79757 16 0.0502199 6.98285e-18
+FULL POWER LAW with 10000 vertices 
+1.76695 16 0.0431652 1.66435e-13
+NOT FULL POWER LAW BAD VERTICES with 113 vertices 
+3.5921 1341 0.173106 0.00243166
+
+It took 4.796 seconds
+Current local time and date: Tue Dec  9 04:32:07 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 559961 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9876 vertices 
+1.79067 18 0.0580875 2.31386e-22
+FULL POWER LAW with 10000 vertices 
+1.75744 18 0.0508248 1.69314e-17
+NOT FULL POWER LAW BAD VERTICES with 124 vertices 
+3.78541 1322 0.127524 0.0378215
+
+It took 4.86 seconds
+Current local time and date: Tue Dec  9 04:32:39 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 546136 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9909 vertices 
+1.94946 51 0.0614016 1.81935e-12
+FULL POWER LAW with 10000 vertices 
+1.89611 51 0.0534111 9.21402e-10
+NOT FULL POWER LAW BAD VERTICES with 91 vertices 
+3.80152 1366 0.160904 0.0199342
+
+It took 5 seconds
+Current local time and date: Tue Dec  9 04:33:10 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 576068 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9879 vertices 
+1.83777 25 0.059058 2.96947e-19
+FULL POWER LAW with 10000 vertices 
+1.79735 25 0.0507983 1.25822e-14
+NOT FULL POWER LAW BAD VERTICES with 121 vertices 
+3.77315 1350 0.141828 0.0166676
+
+It took 4.874 seconds
+Current local time and date: Tue Dec  9 04:34:45 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 544237 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9882 vertices 
+1.76081 16 0.0638889 8.31656e-28
+FULL POWER LAW with 10000 vertices 
+1.73161 16 0.0573346 8.18133e-23
+NOT FULL POWER LAW BAD VERTICES with 118 vertices 
+3.52192 1275 0.188714 0.000447658
+
+It took 4.796 seconds
+Current local time and date: Tue Dec  9 04:35:56 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 560056 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9879 vertices 
+1.85807 19 0.0453057 1.8162e-14
+FULL POWER LAW with 10000 vertices 
+1.82031 19 0.0371643 5.09545e-10
+NOT FULL POWER LAW BAD VERTICES with 121 vertices 
+3.28283 1335 0.180572 0.000852669
+
+It took 4.921 seconds
+Current local time and date: Tue Dec  9 04:37:40 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 630824 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9859 vertices 
+2.06638 63 0.0475773 1.94002e-07
+FULL POWER LAW with 10000 vertices 
+1.96858 63 0.0339727 0.00038357
+NOT FULL POWER LAW BAD VERTICES with 141 vertices 
+3.7876 1367 0.127709 0.0214735
+
+It took 5.031 seconds
+Current local time and date: Tue Dec  9 04:44:25 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 565533 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9884 vertices 
+1.88987 30 0.0510466 5.40479e-13
+FULL POWER LAW with 10000 vertices 
+1.84272 30 0.0418006 4.98099e-09
+NOT FULL POWER LAW BAD VERTICES with 116 vertices 
+3.75167 1373 0.158387 0.00689873
+
+It took 4.953 seconds
+Current local time and date: Tue Dec  9 04:49:51 2014
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.3
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 300000 vertices and 3343097649 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 250547 vertices 
+2.23259 5420 0.101879 0
+FULL POWER LAW with 300000 vertices 
+1.92542 5420 0.0760674 0
+NOT FULL POWER LAW BAD VERTICES with 49453 vertices 
+3.35818 40293 0.128909 0
+
+It took 5018.72 seconds
+Current local time and date: Tue Dec  9 06:15:36 2014
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.2
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 300000 vertices and 7547483855 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 130531 vertices 
+65.3996 38755 0.12264 0
+FULL POWER LAW with 300000 vertices 
+3.03433 38755 0.151963 0
+NOT FULL POWER LAW BAD VERTICES with 169469 vertices 
+3.11528 40158 0.149714 0
+
+It took 4513.14 seconds
+Current local time and date: Wed Dec 10 05:13:30 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 514259 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9894 vertices 
+1.85362 27 0.0560556 6.31262e-15
+FULL POWER LAW with 10000 vertices 
+1.81152 27 0.0476711 4.02251e-11
+NOT FULL POWER LAW BAD VERTICES with 106 vertices 
+3.58022 1301 0.180419 0.00214938
+
+It took 4.937 seconds
+Current local time and date: Thu Dec 11 00:38:04 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 611618 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9866 vertices 
+2.00376 50 0.0517578 5.4375e-10
+FULL POWER LAW with 10000 vertices 
+1.92453 50 0.038519 6.76595e-06
+NOT FULL POWER LAW BAD VERTICES with 134 vertices 
+3.50362 1355 0.158016 0.00318639
+
+It took 5.094 seconds
+Current local time and date: Thu Dec 11 00:49:19 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 570335 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9894 vertices 
+2.10033 90 0.0617554 1.98551e-08
+FULL POWER LAW with 10000 vertices 
+2 90 0.0509778 4.05774e-06
+NOT FULL POWER LAW BAD VERTICES with 106 vertices 
+3.75401 1364 0.156528 0.01224
+
+It took 5.203 seconds
+Current local time and date: Thu Dec 11 00:49:57 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 512387 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9895 vertices 
+1.88554 29 0.0575071 2.89609e-15
+FULL POWER LAW with 10000 vertices 
+1.8398 29 0.0480621 5.3119e-11
+NOT FULL POWER LAW BAD VERTICES with 105 vertices 
+3.75807 1357 0.180888 0.0025242
+
+It took 4.89 seconds
+Current local time and date: Thu Dec 11 00:55:30 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 634100 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9864 vertices 
+2.18849 108 0.0554631 1.79678e-06
+FULL POWER LAW with 10000 vertices 
+2.04479 108 0.042894 0.000293196
+NOT FULL POWER LAW BAD VERTICES with 136 vertices 
+3.98384 1385 0.112222 0.0719608
+
+Graph has Cluster Coefficient: 0
+
+It took 5.031 seconds
+Current local time and date: Thu Dec 11 01:02:00 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 578843 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9886 vertices 
+1.7364 14 0.0591105 5.84743e-27
+FULL POWER LAW with 10000 vertices 
+1.71172 14 0.0531622 3.61975e-22
+NOT FULL POWER LAW BAD VERTICES with 114 vertices 
+3.57834 1368 0.199798 0.000241517
+
+Graph has Cluster Coefficient: 0
+
+It took 4.968 seconds
+Current local time and date: Thu Dec 11 01:03:06 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 569035 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9880 vertices 
+1.79295 18 0.0606094 5.85202e-25
+FULL POWER LAW with 10000 vertices 
+1.76104 18 0.0534147 8.88778e-20
+NOT FULL POWER LAW BAD VERTICES with 120 vertices 
+3.75162 1370 0.144167 0.0161031
+
+Graph has Cluster Coefficient: 0.1024
+
+It took 4.999 seconds
+Current local time and date: Thu Dec 11 01:05:31 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 568418 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9878 vertices 
+1.78207 17 0.0570377 1.22338e-22
+FULL POWER LAW with 10000 vertices 
+1.75096 17 0.0500968 7.92411e-18
+NOT FULL POWER LAW BAD VERTICES with 122 vertices 
+3.76519 1335 0.129214 0.0340232
+
+Graph has Cluster Coefficient: 0.1032
+
+It took 5 seconds
+Current local time and date: Thu Dec 11 01:06:39 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 609084 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9873 vertices 
+1.76779 17 0.0606533 9.9955e-27
+FULL POWER LAW with 10000 vertices 
+1.73807 17 0.0539515 1.47873e-21
+NOT FULL POWER LAW BAD VERTICES with 127 vertices 
+3.83318 1374 0.116415 0.0713026
+
+Graph has Cluster Coefficient: 0.0624
+
+It took 5.328 seconds
+Current local time and date: Thu Dec 11 01:07:48 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 520764 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9892 vertices 
+2.07043 69 0.0567454 4.23028e-08
+FULL POWER LAW with 10000 vertices 
+1.97667 69 0.0441446 2.97555e-05
+NOT FULL POWER LAW BAD VERTICES with 108 vertices 
+4.0081 1364 0.0947012 0.30309
+
+Graph has Cluster Coefficient: 0.1515
+
+It took 4.936 seconds
+Current local time and date: Thu Dec 11 01:08:21 2014
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  ww'*(x,x')
+Graph has 10000 vertices and 574872 edges
+
+NOT FULL POWER LAW GOOD VERTICES with 9883 vertices 
+95.8865 1302 0.0414389 1
+FULL POWER LAW with 10000 vertices 
+3.6781 1302 0.139706 0.0170918
+NOT FULL POWER LAW BAD VERTICES with 117 vertices 
+3.67879 1327 0.146716 0.013558
+
+Graph has Cluster Coefficient: 0.1191
+
+It took 4.985 seconds
+Current local time and date: Thu Dec 11 01:09:30 2014
+
+ ----------------------------------------
+
