@@ -1,0 +1,5 @@
+Graph with 100 vertices and 263 edges
+Max alpha: 3.92386653228
+Accuracy (alpha=0): 0.50, pos: 0.00, neg: 1.00
+Accuracy (alpha=1): 0.57, pos: 0.43, neg: 0.70
+Accuracy (alpha=2): 0.67, pos: 0.93, neg: 0.40
