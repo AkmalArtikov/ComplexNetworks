@@ -170,9 +170,9 @@ def plot_figure_commute(file_name):
 good = 'temp_degrees/temp_good.txt'
 bad = 'temp_degrees/temp_bad.txt'
 full = 'temp_degrees/temp.txt'
-commute_full = 'temp_degrees/commute_temp.txt'
+commute_full = 'temp_degrees/commulate_temp.txt'
 
 plot_figures(good)
 plot_figures(bad)
 plot_figures(full)
-plot_figure_commute(commute_full)
+#plot_figure_commute(commute_full)
