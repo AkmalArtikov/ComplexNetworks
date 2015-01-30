@@ -18,9 +18,10 @@ enum EXT_REAL_CODE
 
 class ExtReal
 {
+public:
    Real value;
    EXT_REAL_CODE c;
-public:
+
    ExtReal operator+(const ExtReal&) const;
    ExtReal operator-(const ExtReal&) const;
    ExtReal operator*(const ExtReal&) const;
