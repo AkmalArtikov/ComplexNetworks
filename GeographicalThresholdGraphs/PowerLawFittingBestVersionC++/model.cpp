@@ -293,7 +293,7 @@ private:
         std::ofstream report (file_name.c_str(), std::fstream::in);
         int indFolder = file_name.find("/", 0);
         std::string first = file_name.substr(0, indFolder + 1);
-        std::string second = "commulate_" + file_name.substr(indFolder + 1, file_name.length() - indFolder);
+        std::string second = "cumulative_" + file_name.substr(indFolder + 1, file_name.length() - indFolder);
         std::string calcCommulateFileName = first + second;
         std::ofstream reportCalcCommulate (calcCommulateFileName.c_str(), std::fstream::in);
 

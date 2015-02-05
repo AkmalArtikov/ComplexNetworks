@@ -7102,3 +7102,23 @@ Current local time and date: Thu Feb  5 18:17:35 2015
 
  ----------------------------------------
 
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599301
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 552617 edges
+ 
+Power-Law with good vertices. Has 9886 vertices 
+1.88383 31 -29702.3 0.0545736 5.6678e-14 
+ 
+Power-Law with bad vertices. Has 114 vertices 
+3.66606 1354 -844.138 0.175067 0.0022188 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.83615 31 -30990.6 0.0450655 7.27397e-10 
+ 
+It took 5.359 seconds
+Current local time and date: Thu Feb  5 18:26:09 2015
+
+ ----------------------------------------
+

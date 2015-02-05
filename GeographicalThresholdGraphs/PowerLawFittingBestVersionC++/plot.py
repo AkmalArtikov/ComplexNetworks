@@ -148,10 +148,10 @@ def plot_figure_commute(file_name):
     plt.legend(loc='upper right')
 
     name = "results_graphs/"
-    if file_name == "temp_degrees/commulate_temp.txt":
-        name += "ful_commulate"
+    if file_name == "temp_degrees/cumulative_temp.txt":
+        name += "ful_cumulative"
     else:
-        name += "good_commulate"
+        name += "good_cumulative"
 
     plt.savefig(name + '.png')
 
@@ -170,8 +170,8 @@ def plot_figure_commute(file_name):
 good = 'temp_degrees/temp_good.txt'
 bad = 'temp_degrees/temp_bad.txt'
 full = 'temp_degrees/temp.txt'
-commute_full = 'temp_degrees/commulate_temp.txt'
-commute_good = 'temp_degrees/commulate_temp_good.txt'
+commute_full = 'temp_degrees/cumulative_temp.txt'
+commute_good = 'temp_degrees/cumulative_temp_good.txt'
 
 plot_figures(good)
 plot_figures(bad)

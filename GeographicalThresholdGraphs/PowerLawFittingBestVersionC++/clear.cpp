@@ -14,8 +14,8 @@ int main()
     clear_file("temp_degrees/temp.txt");
     clear_file("temp_degrees/temp_good.txt");
     clear_file("temp_degrees/temp_bad.txt");
-    clear_file("temp_degrees/commulate_temp.txt");
-    clear_file("temp_degrees/commulate_temp_good.txt");
+    clear_file("temp_degrees/cumulative_temp.txt");
+    clear_file("temp_degrees/cumulative_temp_good.txt");
 
     return 0;
 }

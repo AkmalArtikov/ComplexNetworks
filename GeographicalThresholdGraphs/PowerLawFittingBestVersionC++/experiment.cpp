@@ -137,7 +137,7 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     report << " ----------------------------------------" << std::endl;
     report << std::endl;
     reportCur << std::endl; 
-     
+      
     reportCur.close();
     report.close(); 
 }   
