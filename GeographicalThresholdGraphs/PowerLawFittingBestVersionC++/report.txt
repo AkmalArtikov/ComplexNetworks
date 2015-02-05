@@ -5637,3 +5637,1468 @@ Current local time and date: Mon Jan 19 04:34:12 2015
 
  ----------------------------------------
 
+size - 10000; dimension - 3; alpha - 6; mode - 1; threshold - 0.8
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 10326114 edges
+size - 10000; dimension - 3; alpha - 6; mode - 1; threshold - 0.8
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 10319603 edges
+size - 20000; dimension - 3; alpha - 6; mode - 1; threshold - 0.8
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 20000 vertices and 41122604 edges
+size - 10000; dimension - 3; alpha - 6; mode - 1; threshold - 0.8
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 10303112 edges
+size - 10000; dimension - 3; alpha - 6; mode - 1; threshold - 0.8
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 10339083 edges
+size - 10000; dimension - 3; alpha - 6; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 13926770 edges
+size - 1000; dimension - 3; alpha - 6; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 1000 vertices and 140420 edges
+size - 100; dimension - 3; alpha - 6; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 100 vertices and 1383 edges
+size - 10; dimension - 3; alpha - 6; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10 vertices and 9 edges
+size - 10000; dimension - 3; alpha - 6; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 13974388 edges
+size - 10; dimension - 3; alpha - 6; mode - 1; threshold - 0
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10 vertices and 22 edges
+size - 100; dimension - 3; alpha - 6; mode - 1; threshold - 0
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 100 vertices and 2449 edges
+size - 100; dimension - 3; alpha - 6; mode - 1; threshold - 0
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 100 vertices and 2451 edges
+size - 100; dimension - 3; alpha - 6; mode - 1; threshold - 0
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 100 vertices and 2477 edges
+size - 100; dimension - 3; alpha - 6; mode - 1; threshold - 0
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 100 vertices and 2473 edges
+size - 10000; dimension - 3; alpha - 6; mode - 1; threshold - 0
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 24991467 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15383946 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15370978 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15396983 edges
+ 
+It took 6.343 seconds
+Current local time and date: Wed Feb  4 14:42:12 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15392349 edges
+ 
+It took 6.172 seconds
+Current local time and date: Wed Feb  4 14:42:51 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15375440 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15439002 edges
+ 
+It took 6.156 seconds
+Current local time and date: Wed Feb  4 14:47:50 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15408828 edges
+ 
+It took 6.203 seconds
+Current local time and date: Wed Feb  4 14:55:34 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15386897 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15432202 edges
+ 
+It took 6.312 seconds
+Current local time and date: Wed Feb  4 14:57:19 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15422072 edges
+ 
+It took 6.156 seconds
+Current local time and date: Wed Feb  4 14:57:53 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15440483 edges
+ 
+It took 7.265 seconds
+Current local time and date: Wed Feb  4 14:58:58 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15343766 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15449733 edges
+ 
+It took 8.187 seconds
+Current local time and date: Wed Feb  4 14:59:54 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15362556 edges
+ 
+It took 6.328 seconds
+Current local time and date: Wed Feb  4 15:00:23 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15371627 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15436507 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15440265 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15450881 edges
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15426410 edges
+ 
+It took 6.375 seconds
+Current local time and date: Wed Feb  4 15:08:59 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15445494 edges
+ 
+It took 6.359 seconds
+Current local time and date: Wed Feb  4 15:10:29 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15395213 edges
+ 
+It took 6.484 seconds
+Current local time and date: Wed Feb  4 15:15:48 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15455136 edges
+ 
+It took 6.437 seconds
+Current local time and date: Wed Feb  4 15:16:43 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15364771 edges
+ 
+It took 6.281 seconds
+Current local time and date: Wed Feb  4 15:19:39 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15415057 edges
+ 
+It took 6.672 seconds
+Current local time and date: Wed Feb  4 15:23:43 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2191651 edges
+ 
+Power-Law with good vertices. Has 9458 vertices 
+1.92997 92 -52345.8 0.0887428 0 
+ 
+Power-Law with bad vertices. Has 542 vertices 
+3.86971 1749 -4113.09 0.132351 1.72617e-08 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.82073 92 -58207.3 0.0740835 1.84776e-40 
+ 
+It took 7.218 seconds
+Current local time and date: Wed Feb  4 15:38:51 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.0001; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 336488 edges
+size - 10000; dimension - 3; alpha - 4; mode - 0.7; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 8035898 edges
+ 
+Power-Law with good vertices. Has 4437 vertices 
+80.0483 1270 -185.648 0.0693919 0.972339 
+ 
+Power-Law with bad vertices. Has 5563 vertices 
+3.12795 1322 -41647.5 0.141348 0 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.0436 1270 -43603.7 0.142632 0 
+ 
+It took 7.171 seconds
+Current local time and date: Wed Feb  4 15:44:00 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2124537 edges
+ 
+Power-Law with good vertices. Has 9509 vertices 
+1.85131 71 -58486.6 0.0899255 0 
+ 
+Power-Law with bad vertices. Has 491 vertices 
+3.83169 1775 -3655.07 0.144349 6.49856e-09 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.76938 71 -63844 0.0771757 0 
+ 
+It took 7.499 seconds
+Current local time and date: Wed Feb  4 15:44:58 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.8; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 11152419 edges
+size - 10000; dimension - 3; alpha - 4; mode - 0.8; threshold - 0.7
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 8914520 edges
+ 
+Power-Law with good vertices. Has 2539 vertices 
+42.4074 1128 -1099.44 0.0418264 0.765866 
+ 
+Power-Law with bad vertices. Has 7461 vertices 
+3.05206 1234 -55264.4 0.138502 0 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.88831 1128 -60962.7 0.141226 0 
+ 
+It took 7.342 seconds
+Current local time and date: Wed Feb  4 15:57:15 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2183802 edges
+ 
+Power-Law with good vertices. Has 9475 vertices 
+2.66186 376 -17715.7 0.0881033 1.95249e-17 
+ 
+Power-Law with bad vertices. Has 525 vertices 
+3.88693 1792 -3872.84 0.12957 1.0942e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.21384 376 -23035.7 0.0671541 2.30065e-12 
+ 
+It took 6.719 seconds
+Current local time and date: Wed Feb  4 16:04:08 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 15364437 edges
+ 
+Power-Law with good vertices. Has -2146710128 vertices 
+9.88131e-324 3.23791e-319 6.95271e-310 4.94066e-324 3.32724e-319 
+ 
+Power-Law with bad vertices. Has 10000 vertices 
+46.1181 4379 -207.095 0.0522461 0.999961 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+46.1181 4379 -207.095 0.0522461 0.999961 
+ 
+It took 11.937 seconds
+Current local time and date: Wed Feb  4 16:04:27 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.0001; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 303450 edges
+ 
+Power-Law with good vertices. Has 10000 vertices 
+4.68898 1082 -396.245 0.0456362 0.999777 
+ 
+Power-Law with bad vertices. Has -188481304 vertices 
+3.23791e-319 3.32803e-319 0 3.32724e-319 0 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+4.68898 1082 -396.245 0.0456362 0.999777 
+ 
+It took 5.297 seconds
+Current local time and date: Wed Feb  4 16:04:50 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 1e-08; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 307443 edges
+ 
+Power-Law with good vertices. Has 10000 vertices 
+4.3505 848 -758.291 0.076526 0.534006 
+ 
+Power-Law with bad vertices. Has -188481304 vertices 
+3.23791e-319 3.32803e-319 0 3.32724e-319 0 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+4.3505 848 -758.291 0.076526 0.534006 
+ 
+It took 5.296 seconds
+Current local time and date: Wed Feb  4 16:05:13 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 100; mode - 1e-08; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 0 edges
+ 
+Power-Law with good vertices. Has 10000 vertices 
+1 1 0 1.79769e+308 1 
+ 
+Power-Law with bad vertices. Has -188481304 vertices 
+3.23791e-319 3.32803e-319 0 3.32724e-319 0 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3 1 -0 0 1 
+ 
+It took 4.593 seconds
+Current local time and date: Wed Feb  4 16:05:29 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2139407 edges
+ 
+Power-Law with good vertices. Has 9488 vertices 
+2.09167 157 -36508 0.0896434 1.84298e-37 
+ 
+Power-Law with bad vertices. Has 512 vertices 
+3.91349 1762 -3757.57 0.126238 3.87013e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.92834 157 -41909.9 0.0719275 1.43432e-26 
+ 
+It took 6.796 seconds
+Current local time and date: Wed Feb  4 16:05:50 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.729257
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2083621 edges
+ 
+Power-Law with good vertices. Has 9479 vertices 
+2.00564 106 -46482 0.0777965 3.46076e-37 
+ 
+Power-Law with bad vertices. Has 521 vertices 
+3.9258 1792 -3724.22 0.132664 9.18917e-08 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.87422 106 -52115.7 0.0612591 6.44019e-25 
+ 
+It took 6.468 seconds
+Current local time and date: Wed Feb  4 16:09:37 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.732842
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2151875 edges
+ 
+Power-Law with good vertices. Has 9475 vertices 
+1.96279 104 -47785.3 0.0877617 0 
+ 
+Power-Law with bad vertices. Has 525 vertices 
+3.98771 1791 -3872.84 0.143664 2.08694e-09 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.84339 104 -53436.9 0.0731645 5.99932e-36 
+ 
+It took 6.718 seconds
+Current local time and date: Wed Feb  4 16:09:58 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.0001; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.333272
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 312403 edges
+ 
+Power-Law with good vertices. Has 10000 vertices 
+4.13365 741 -1044.74 0.0732699 0.380079 
+ 
+Power-Law with bad vertices. Has -2146710128 vertices 
+9.88131e-324 3.23791e-319 6.95271e-310 4.94066e-324 3.32724e-319 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+4.13365 741 -1044.74 0.0732699 0.380079 
+ 
+It took 5.219 seconds
+Current local time and date: Wed Feb  4 16:10:34 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.735368
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2173186 edges
+ 
+Power-Law with good vertices. Has 9486 vertices 
+38.9291 1629 -282.376 0.0854879 0.781649 
+ 
+Power-Law with bad vertices. Has 514 vertices 
+3.81397 1746 -3939.39 0.151211 1.78601e-10 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.64195 1629 -4470.74 0.143792 1.02443e-10 
+ 
+It took 6.765 seconds
+Current local time and date: Wed Feb  4 16:15:17 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.0001; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.336038
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 309983 edges
+ 
+Power-Law with good vertices. Has 10000 vertices 
+3.26428 506 -1952.23 0.0731452 0.0947429 
+ 
+Power-Law with bad vertices. Has -2146710128 vertices 
+9.88131e-324 3.23791e-319 6.95271e-310 4.94066e-324 3.32724e-319 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.26428 506 -1952.23 0.0731452 0.0947429 
+ 
+It took 5.28 seconds
+Current local time and date: Wed Feb  4 16:16:02 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.73026
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2075682 edges
+ 
+Power-Law with good vertices. Has 9516 vertices 
+1.86995 77 -54774.8 0.0901868 0 
+ 
+Power-Law with bad vertices. Has 484 vertices 
+3.81055 1728 -3717.24 0.130554 1.67663e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.78264 77 -60030.3 0.0775476 0 
+ 
+It took 6.671 seconds
+Current local time and date: Wed Feb  4 16:38:59 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.736496
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2172708 edges
+ 
+Power-Law with good vertices. Has 9475 vertices 
+69.5359 1668 -84.1253 0.0861746 0.998394 
+ 
+Power-Law with bad vertices. Has 525 vertices 
+3.75727 1788 -3785.19 0.148116 1.25119e-09 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.58029 1668 -4275.14 0.141537 6.84376e-10 
+ 
+It took 6.64 seconds
+Current local time and date: Wed Feb  4 16:41:50 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.729736
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2072319 edges
+ 
+Power-Law with good vertices. Has 9506 vertices 
+94.6856 1705 -14.0888 0.0473557 1 
+ 
+Power-Law with bad vertices. Has 494 vertices 
+3.66981 1732 -3799.01 0.138853 1.56944e-08 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.59901 1705 -3864.5 0.142182 4.78034e-09 
+ 
+It took 6.64 seconds
+Current local time and date: Wed Feb  4 16:43:46 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.73843
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2206044 edges
+ 
+Power-Law with good vertices. Has 9479 vertices 
+53.5815 1664 -129.709 0.058288 0.999971 
+ 
+Power-Law with bad vertices. Has 521 vertices 
+4.07482 1820 -3692.17 0.107191 3.31626e-05 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.7183 1664 -4265.85 0.128926 2.45016e-08 
+ 
+It took 6.859 seconds
+Current local time and date: Wed Feb  4 16:43:58 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.735104
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2164108 edges
+ 
+Power-Law with good vertices. Has 9471 vertices 
+90.1386 1748 -14.5679 0.0332078 1 
+ 
+Power-Law with bad vertices. Has 529 vertices 
+3.88792 1777 -3883.96 0.110948 9.01866e-06 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.84915 1748 -4016.93 0.109736 7.82377e-06 
+ 
+It took 6.875 seconds
+Current local time and date: Wed Feb  4 16:44:10 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.734152
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2147726 edges
+ 
+Power-Law with good vertices. Has 9496 vertices 
+2.15057 171 -35096.4 0.082209 1.98796e-30 
+ 
+Power-Law with bad vertices. Has 504 vertices 
+3.84721 1767 -3727.3 0.126037 4.91855e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.97036 171 -40424 0.0632025 6.59318e-20 
+ 
+It took 6.78 seconds
+Current local time and date: Wed Feb  4 16:44:48 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.736025
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2169261 edges
+ 
+Power-Law with good vertices. Has 9494 vertices 
+2.0722 148 -38742.7 0.0875255 5.00283e-38 
+ 
+Power-Law with bad vertices. Has 506 vertices 
+3.8159 1764 -3796.01 0.13835 1.60142e-08 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.919 148 -44116.8 0.0735428 2.38041e-29 
+ 
+It took 6.765 seconds
+Current local time and date: Wed Feb  4 16:44:59 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.73389
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2138202 edges
+ 
+Power-Law with good vertices. Has 9481 vertices 
+45.9512 1696 -88.3926 0.0633783 0.999999 
+ 
+Power-Law with bad vertices. Has 519 vertices 
+3.94816 1828 -3643.42 0.124256 1.02675e-06 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.71224 1696 -4160.87 0.133565 1.10161e-08 
+ 
+It took 6.656 seconds
+Current local time and date: Wed Feb  4 16:48:29 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.729061
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2081066 edges
+ 
+Power-Law with good vertices. Has 9520 vertices 
+2.27933 227 -27301.4 0.0887419 2.88356e-27 
+ 
+Power-Law with bad vertices. Has 480 vertices 
+3.86372 1766 -3567.83 0.152892 9.5812e-10 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.04513 227 -32301.1 0.0688072 1.55088e-18 
+ 
+It took 6.812 seconds
+Current local time and date: Wed Feb  4 16:48:39 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.73465
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2184404 edges
+ 
+Power-Law with good vertices. Has 9455 vertices 
+2.23227 197 -31570.9 0.0833854 3.96525e-28 
+ 
+Power-Law with bad vertices. Has 545 vertices 
+3.88025 1750 -4126.29 0.145185 3.63724e-10 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.00653 197 -37294.6 0.0636573 1.72874e-18 
+ 
+It took 6.796 seconds
+Current local time and date: Wed Feb  4 16:50:06 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.734126
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2175914 edges
+ 
+Power-Law with good vertices. Has 9480 vertices 
+56.9587 1701 -124.066 0.0884516 0.980814 
+ 
+Power-Law with bad vertices. Has 520 vertices 
+4.15901 1799 -3769.11 0.127621 2.19198e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.96384 1701 -4213.77 0.119268 3.3897e-07 
+ 
+It took 6.812 seconds
+Current local time and date: Wed Feb  4 16:50:16 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.737411
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2186026 edges
+ 
+Power-Law with good vertices. Has 9475 vertices 
+2.1093 153 -38480.9 0.0811378 1.13754e-32 
+ 
+Power-Law with bad vertices. Has 525 vertices 
+3.95125 1790 -3857.55 0.129196 1.20485e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.94172 153 -44060.4 0.0636477 4.09181e-22 
+ 
+It took 6.858 seconds
+Current local time and date: Wed Feb  4 16:50:26 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.73398
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2174880 edges
+ 
+Power-Law with good vertices. Has 9472 vertices 
+1.92626 94 -51021.3 0.0898037 0 
+ 
+Power-Law with bad vertices. Has 528 vertices 
+3.9311 1766 -4002.49 0.122739 3.43546e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.81849 94 -56721 0.0746173 7.62334e-40 
+ 
+It took 7.406 seconds
+Current local time and date: Wed Feb  4 16:51:53 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.73283
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2129212 edges
+ 
+Power-Law with good vertices. Has 9495 vertices 
+1.89382 81 -54857.8 0.0872978 0 
+ 
+Power-Law with bad vertices. Has 505 vertices 
+3.77289 1740 -3861.95 0.137511 1.48247e-08 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.79913 81 -60350.5 0.0734025 0 
+ 
+It took 6.702 seconds
+Current local time and date: Wed Feb  4 16:56:44 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.733105
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2151072 edges
+ 
+Power-Law with good vertices. Has 9475 vertices 
+93.0809 1711 -49.823 0.0592703 1 
+ 
+Power-Law with bad vertices. Has 525 vertices 
+3.94072 1759 -3936.29 0.110797 7.47674e-06 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.85256 1711 -4144.47 0.110687 4.05305e-06 
+ 
+It took 6.562 seconds
+Current local time and date: Wed Feb  4 17:02:08 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.724468
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2035397 edges
+ 
+Power-Law with good vertices. Has 9510 vertices 
+66.7465 1650 -118.653 0.062592 0.999901 
+ 
+Power-Law with bad vertices. Has 490 vertices 
+3.92419 1738 -3648.06 0.107155 3.92334e-05 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.76117 1650 -4001.35 0.125283 1.84626e-07 
+ 
+It took 6.483 seconds
+Current local time and date: Wed Feb  4 17:02:22 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.736766
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2206129 edges
+ 
+Power-Law with good vertices. Has 9457 vertices 
+1.90369 83 -55875.1 0.0878402 0 
+ 
+Power-Law with bad vertices. Has 543 vertices 
+3.85326 1773 -3984.35 0.126529 1.51794e-07 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.80317 83 -61772.9 0.073527 0 
+ 
+It took 6.562 seconds
+Current local time and date: Wed Feb  4 17:02:42 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.72974
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 2104318 edges
+ 
+Power-Law with good vertices. Has 9494 vertices 
+1.97428 107 -46076 0.082113 1.40884e-40 
+ 
+Power-Law with bad vertices. Has 506 vertices 
+3.92731 1781 -3705.43 0.142158 8.13933e-09 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.85313 107 -51518.6 0.0679203 6.33751e-30 
+ 
+It took 6.531 seconds
+Current local time and date: Wed Feb  4 17:06:36 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.510348
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 39792 edges
+ 
+Power-Law with good vertices. Has 9994 vertices 
+1.84325 3 -10948.6 0.0295434 0.00602979 
+ 
+Power-Law with bad vertices. Has 6 vertices 
+4.16083 895 -40.4536 0.294034 0.677343 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.83691 3 -11022.9 0.0282613 0.00977617 
+ 
+It took 4.937 seconds
+Current local time and date: Wed Feb  4 17:19:35 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.511235
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 41868 edges
+ 
+Power-Law with good vertices. Has 9991 vertices 
+1.82012 2 -14494.1 0.0263793 0.0017953 
+ 
+Power-Law with bad vertices. Has 9 vertices 
+2.75321 792 -67.5723 0.34567 0.23242 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.81343 2 -14610.2 0.0245474 0.00454899 
+ 
+It took 4.686 seconds
+Current local time and date: Wed Feb  4 17:32:59 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.511409
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 4390126 edges
+ 
+Power-Law with good vertices. Has 7527 vertices 
+94.0723 1117 -101.334 0.0646097 0.99973 
+ 
+Power-Law with bad vertices. Has 2473 vertices 
+2.95812 1194 -18072.3 0.120027 5.73268e-29 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.86576 1117 -19570.9 0.118239 2.14504e-30 
+ 
+It took 8.625 seconds
+Current local time and date: Wed Feb  4 17:35:45 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.510939
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 4362036 edges
+ 
+Power-Law with good vertices. Has 7561 vertices 
+75.9874 1097 -158.921 0.0481317 0.999967 
+ 
+Power-Law with bad vertices. Has 2439 vertices 
+2.88264 1147 -18704.7 0.114162 4.38183e-27 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.8112 1097 -19575.7 0.118498 1.98429e-30 
+ 
+It took 8.968 seconds
+Current local time and date: Wed Feb  4 17:36:38 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.510851
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 39276 edges
+ 
+Power-Law with good vertices. Has 9994 vertices 
+1.87649 5 -8079.89 0.0314176 0.0294934 
+ 
+Power-Law with bad vertices. Has 6 vertices 
+2.68541 784 -44.8153 0.518462 0.079456 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.86686 5 -8153.23 0.029003 0.0544512 
+ 
+It took 4.703 seconds
+Current local time and date: Wed Feb  4 17:38:01 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.9
+Generating weights :  Pareto
+Mean value of distibution is  0.730838
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 9068167 edges
+ 
+Power-Law with good vertices. Has 7615 vertices 
+77.1541 2410 -245.701 0.0781067 0.890502 
+ 
+Power-Law with bad vertices. Has 2385 vertices 
+3.07346 2517 -19707.6 0.106291 5.89225e-23 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.01285 2410 -20903.1 0.106235 2.69826e-24 
+ 
+It took 11.531 seconds
+Current local time and date: Wed Feb  4 17:40:15 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 0.9
+Generating weights :  Pareto
+Mean value of distibution is  0.730853
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 9239770 edges
+ 
+Power-Law with good vertices. Has 7596 vertices 
+60.5087 2418 -335.202 0.0460177 0.998234 
+ 
+Power-Law with bad vertices. Has 2404 vertices 
+3.07885 2553 -19868.9 0.116199 1.53593e-27 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.99021 2418 -21269.9 0.117296 5.75306e-30 
+ 
+It took 11.671 seconds
+Current local time and date: Wed Feb  4 17:40:51 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 4; mode - 0.4; threshold - 1
+Generating weights :  Pareto
+Mean value of distibution is  0.738468
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 7853866 edges
+ 
+Power-Law with good vertices. Has 8112 vertices 
+89.8114 2491 -96.1235 0.0841721 0.996801 
+ 
+Power-Law with bad vertices. Has 1888 vertices 
+3.15696 2572 -15487.4 0.115416 2.16519e-21 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+3.10578 2491 -16194.2 0.117895 2.72562e-23 
+ 
+It took 11.765 seconds
+Current local time and date: Wed Feb  4 17:41:15 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+size - 100000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.60002
+Generating edges :  w*w'*(x,x')
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+size - 250000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.602532
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 597039 edges
+ 
+Power-Law with good vertices. Has 9873 vertices 
+1.99839 49 -24351.6 0.0510546 8.55899e-10 
+ 
+Power-Law with bad vertices. Has 127 vertices 
+3.74753 1358 -945.811 0.132548 0.0247457 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.924 49 -25768.2 0.0382116 7.79753e-06 
+ 
+It took 5.343 seconds
+Current local time and date: Thu Feb  5 01:43:05 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.601447
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 571940 edges
+ 
+Power-Law with good vertices. Has 9883 vertices 
+2.1779 101 -13735 0.0576505 1.00457e-06 
+ 
+Power-Law with bad vertices. Has 117 vertices 
+3.7185 1352 -833.426 0.145382 0.0191248 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.04632 101 -14988.8 0.0436677 0.000311334 
+ 
+It took 5.5 seconds
+Current local time and date: Thu Feb  5 01:43:13 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599809
+Generating edges :  w*w'*(x,x')
+size - 30000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.600037
+Generating edges :  w*w'*(x,x')
+Graph has 30000 vertices and 5129807 edges
+ 
+Power-Law with good vertices. Has 29631 vertices 
+1.85805 78 -119970 0.05705 0 
+ 
+Power-Law with bad vertices. Has 369 vertices 
+3.71825 4086 -3082.45 0.123036 4.29795e-05 
+ 
+Power-Law with all vertices. Has 30000 vertices 
+1.81379 78 -124567 0.0479357 4.49604e-37 
+ 
+It took 48.28 seconds
+Current local time and date: Thu Feb  5 01:44:29 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.59968
+Generating edges :  w*w'*(x,x')
+size - 30000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.602344
+Generating edges :  w*w'*(x,x')
+Graph has 30000 vertices and 5217290 edges
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.596915
+Generating edges :  w*w'*(x,x')
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.596501
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 515261 edges
+ 
+Power-Law with good vertices. Has 9900 vertices 
+1.93967 43 -22788.8 0.060404 1.01812e-12 
+ 
+Power-Law with bad vertices. Has 100 vertices 
+3.62697 1350 -701.25 0.185387 0.00358621 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.88245 43 -23900.5 0.0499122 4.90971e-09 
+ 
+It took 5.374 seconds
+Current local time and date: Thu Feb  5 02:21:20 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.601916
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 571517 edges
+ 
+Power-Law with good vertices. Has 9885 vertices 
+1.75279 17 -40794.1 0.0579516 2.12248e-22 
+ 
+Power-Law with bad vertices. Has 115 vertices 
+3.75768 1356 -824.038 0.111403 0.133632 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.72472 17 -42101.2 0.0523299 1.2877e-18 
+ 
+It took 5.484 seconds
+Current local time and date: Thu Feb  5 16:38:45 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.598579
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 523791 edges
+ 
+Power-Law with good vertices. Has 9908 vertices 
+2.1137 86 -14808.8 0.0626102 1.65122e-08 
+ 
+Power-Law with bad vertices. Has 92 vertices 
+3.78577 1376 -642.67 0.14836 0.0474205 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.02038 86 -15802.7 0.0489816 1.4524e-05 
+ 
+It took 5.343 seconds
+Current local time and date: Thu Feb  5 16:40:03 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.601823
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 574419 edges
+ 
+Power-Law with good vertices. Has 9882 vertices 
+1.79757 19 -40029.5 0.0554741 2.98928e-20 
+ 
+Power-Law with bad vertices. Has 118 vertices 
+3.64943 1379 -824.232 0.123681 0.0734561 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.76514 19 -41381.2 0.0484781 8.31559e-16 
+ 
+It took 5.468 seconds
+Current local time and date: Thu Feb  5 16:41:56 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.602934
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 604769 edges
+ 
+Power-Law with good vertices. Has 9867 vertices 
+1.83857 29 -32686.3 0.0638435 1.15016e-20 
+ 
+Power-Law with bad vertices. Has 133 vertices 
+3.97471 1340 -975.406 0.118386 0.0508517 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.79338 29 -34168.6 0.0553147 5.67329e-16 
+ 
+It took 5.483 seconds
+Current local time and date: Thu Feb  5 16:42:07 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599329
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 536145 edges
+ 
+Power-Law with good vertices. Has 9895 vertices 
+1.7813 16 -41493.6 0.0534282 5.86021e-20 
+ 
+Power-Law with bad vertices. Has 105 vertices 
+3.67118 1380 -769.744 0.136278 0.0469659 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.75374 16 -42708.9 0.0469217 1.08382e-15 
+ 
+It took 5.546 seconds
+Current local time and date: Thu Feb  5 16:42:43 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.597885
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 532437 edges
+ 
+Power-Law with good vertices. Has 9894 vertices 
+1.79041 18 -38466 0.0563636 3.20082e-20 
+ 
+Power-Law with bad vertices. Has 106 vertices 
+3.6428 1337 -790.847 0.130507 0.0578705 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.76037 18 -39682.1 0.0497042 4.77756e-16 
+ 
+It took 5.546 seconds
+Current local time and date: Thu Feb  5 16:44:15 2015
+
+ ----------------------------------------
+
+size - 30000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.601714
+Generating edges :  w*w'*(x,x')
+Graph has 30000 vertices and 5121848 edges
+ 
+Power-Law with good vertices. Has 29652 vertices 
+2.00167 167 -74545.8 0.0614788 7.68727e-35 
+ 
+Power-Law with bad vertices. Has 348 vertices 
+3.65675 4048 -2942.32 0.109662 0.000589495 
+ 
+Power-Law with all vertices. Has 30000 vertices 
+1.92521 167 -78767.8 0.0483597 1.99363e-22 
+ 
+It took 47 seconds
+Current local time and date: Thu Feb  5 16:47:15 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.60191
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 582150 edges
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.601705
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 573574 edges
+ 
+Power-Law with good vertices. Has 9889 vertices 
+1.79321 19 -39986.1 0.0575815 1.02965e-21 
+ 
+Power-Law with bad vertices. Has 111 vertices 
+3.38925 1343 -836.985 0.151117 0.0144147 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.76258 19 -41263.7 0.0506518 3.80995e-17 
+ 
+It took 5.577 seconds
+Current local time and date: Thu Feb  5 17:00:02 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.598814
+Generating edges :  w*w'*(x,x')
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.603173
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 591708 edges
+ 
+Power-Law with good vertices. Has 9875 vertices 
+1.75526 16 -44066.5 0.060619 9.72873e-27 
+ 
+Power-Law with bad vertices. Has 125 vertices 
+3.79813 1365 -905.612 0.145596 0.0123462 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.72662 16 -45495.4 0.0540447 1.17194e-21 
+ 
+It took 5.406 seconds
+Current local time and date: Thu Feb  5 17:35:19 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599559
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 550254 edges
+ 
+Power-Law with good vertices. Has 9878 vertices 
+1.80289 19 -38540.7 0.0590824 3.87984e-22 
+ 
+Power-Law with bad vertices. Has 122 vertices 
+3.856 1324 -898.624 0.11423 0.087284 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.76815 19 -39931.2 0.0512064 5.1744e-17 
+ 
+It took 5.343 seconds
+Current local time and date: Thu Feb  5 17:40:14 2015
+
+ ----------------------------------------
+
+size - 35000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599918
+Generating edges :  w*w'*(x,x')
+Graph has 35000 vertices and 6918774 edges
+ 
+Power-Law with good vertices. Has 34580 vertices 
+1.90138 120 -119978 0.058554 0 
+ 
+Power-Law with bad vertices. Has 420 vertices 
+3.61935 4643 -3695.38 0.139077 1.97328e-07 
+ 
+Power-Law with all vertices. Has 35000 vertices 
+1.84781 120 -125223 0.0481722 7.66917e-36 
+ 
+It took 71.061 seconds
+Current local time and date: Thu Feb  5 17:42:29 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599367
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 534657 edges
+ 
+Power-Law with good vertices. Has 9901 vertices 
+2.12843 87 -14839.7 0.0629471 1.24782e-08 
+ 
+Power-Law with bad vertices. Has 99 vertices 
+3.4437 1330 -747.695 0.190091 0.0018054 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+2.0252 87 -15917.7 0.0475386 2.67336e-05 
+ 
+It took 5.358 seconds
+Current local time and date: Thu Feb  5 17:49:26 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.597574
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 534472 edges
+ 
+Power-Law with good vertices. Has 9881 vertices 
+1.76678 14 -43984 0.0577145 4.97641e-25 
+ 
+Power-Law with bad vertices. Has 119 vertices 
+3.70329 1352 -834.272 0.184174 0.00114855 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.73838 14 -45359.2 0.0508213 9.04101e-20 
+ 
+It took 5.25 seconds
+Current local time and date: Thu Feb  5 17:52:23 2015
+
+ ----------------------------------------
+
+size - 10000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.602414
+Generating edges :  w*w'*(x,x')
+Graph has 10000 vertices and 568294 edges
+ 
+Power-Law with good vertices. Has 9888 vertices 
+1.96103 50 -23032 0.0602736 1.42019e-12 
+ 
+Power-Law with bad vertices. Has 112 vertices 
+4.16549 1387 -776.783 0.137928 0.0368122 
+ 
+Power-Law with all vertices. Has 10000 vertices 
+1.89742 50 -24260.9 0.0492041 9.31909e-09 
+ 
+It took 5.39 seconds
+Current local time and date: Thu Feb  5 18:17:35 2015
+
+ ----------------------------------------
+

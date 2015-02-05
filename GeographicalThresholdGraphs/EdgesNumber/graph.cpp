@@ -8,32 +8,22 @@
 class Graph
 {
 public:
-    Graph(int _size = 10000, int _dimension = 3, bool _calcCluster = false): size(_size)
-                                                                           , dimension(_dimension)
-                                                                           , degrees(_size, 0)
-                                                                           , weights(_size)
-                                                                           , coords(_size, std::vector<double>(_dimension))
-                                                                           , edgesNumber(0)
-                                                                           , calcCluster(_calcCluster) 
-    {
-        if (calcCluster)
-        {
-            adjMatrix = std::vector<std::vector<bool> >(_size, std::vector<bool>(_size, false));            
-        }
-    };
+    Graph(int size_ = 10000, int dimension_ = 3): size(size_)
+                                                , dimension(dimension_)
+                                                , degrees(size_, 0)
+                                                , weights(size_)
+                                                , coords(size_, std::vector<double>(dimension_))
+                                                , edgesNumber(0)
+                                                , adjMatrix(size_, std::vector<bool>(size_, false))
+    {};
 
     // Отмечает появление ребра. Обновляет степени вершин
     void AddEdge(int i, int j)
     {
         degrees[i]++;
         degrees[j]++;
-
-        if (calcCluster)
-        {
-            adjMatrix[i][j] = true;
-            adjMatrix[j][i] = true;    
-        }
-        
+        adjMatrix[i][j] = true;
+        adjMatrix[j][i] = true;
         edgesNumber++;
     }
 
@@ -96,11 +86,6 @@ public:
     // Возвращает глобальный кластерный коэффициент
     double GetGlobalClusterCoef() const
     {
-        if (!calcCluster)
-        {
-            return 0;
-        }
-
         double closedTriplets = 0;
         double connectedTriplets = 0;
 
@@ -170,11 +155,6 @@ private:
     // Возвращает локальный кластерный коэффициент вершины
     double GetLocalClusterCoef(int ind) const
     {
-        if (!calcCluster)
-        {
-            return 0;
-        }
-
         std::vector<int> neighbours;
         int degree = degrees[ind];
 
@@ -232,9 +212,6 @@ private:
 
     // Матрица смежности. vector<bool> работает оптимизированно в c++
     std::vector<std::vector<bool> > adjMatrix;
-
-    // Нужно ли считать кластерный коэффициент
-    bool calcCluster;
 };
 
 #endif 

@@ -105,7 +105,7 @@ def plot_figures(file_name):
 
     y = []
     for i in range(len(degrees)):
-        y.append(int(degrees[i]))
+        y.append(int(degrees[i]) / (len(degrees) + 0.0))
 
     new_y = []
     for i in range(len(degrees)):
@@ -144,35 +144,37 @@ def plot_figure_commute(file_name):
     plt.plot(x, probs, label="D(degree > x)")
     plt.ylabel('Percentage of vertices which degree> x')
     plt.xlabel('Degrees')
-    plt.title("Commute function for degrees")
+    plt.title("Cumulative function for degrees")
     plt.legend(loc='upper right')
 
     name = "results_graphs/"
-    if file_name == "temp_degrees/commute_temp.txt":
-        name += "ful_commute"
+    if file_name == "temp_degrees/commulate_temp.txt":
+        name += "ful_commulate"
+    else:
+        name += "good_commulate"
 
     plt.savefig(name + '.png')
 
-    new_x = [math.log(xx + 0.000000001, 2) for xx in x]
-    new_probs = [math.log(float(xx) * len(x) + 0.000000001, 2) for xx in probs]
-
     plt.figure(figsize=(12, 10))
-    plt.plot(new_x, new_probs, label="log(D(degree > x))")
+    plt.plot(x, probs, label="log(D(degree > x))")
     plt.legend(loc='upper right')
-    plt.title("Commute function for degrees in log/log coords")
+    plt.title("Cumulative function for degrees in log/log coords")
     plt.ylabel('log Number of vertices which degree> x')
     plt.xlabel('log Degrees')
+    plt.xscale('log')
+    plt.yscale('log')
 
     plt.savefig(name + '_log' + '.png')
-
 
 
 good = 'temp_degrees/temp_good.txt'
 bad = 'temp_degrees/temp_bad.txt'
 full = 'temp_degrees/temp.txt'
 commute_full = 'temp_degrees/commulate_temp.txt'
+commute_good = 'temp_degrees/commulate_temp_good.txt'
 
 plot_figures(good)
 plot_figures(bad)
 plot_figures(full)
-#plot_figure_commute(commute_full)
+plot_figure_commute(commute_full)
+plot_figure_commute(commute_good)

@@ -10,8 +10,11 @@
 #include <climits>
 #include <iostream>
 
+#include "newran02/newran.h"
+#include <vector>
+#include <math.h>
+
 #include "graph.cpp"
-#include "random.cpp"
 
 // Структура результата применения функции power_law_fit
 struct PowerLawResult
@@ -47,9 +50,9 @@ struct PowerLawParams
 class Model
 {
 public:
-    Model(int _size = 10000, int _dimension = 3, bool _calcCluster = false): size(_size)
-                                                                           , dimension(_dimension)
-                                                                           , graph(_size, _dimension, _calcCluster)
+    Model(int size_ = 10000, int dimension_ = 3): size(size_)
+                                                , dimension(dimension_)
+                                                , graph(size_, dimension_)
     {
     }
 
@@ -58,7 +61,7 @@ public:
     {
         for (int i = 0; i < size; ++i)
         {
-            std::vector<double> coords = RandomGenerator::GenerateUnitNormalVector(dimension);
+            std::vector<double> coords = GenerateUnitNormalVector(dimension);
             graph.SetCoords(i, coords);
         }
     }
@@ -66,7 +69,7 @@ public:
     // Генерация весов в модели
     double GenerateWeights(double alpha, double mode)
     {
-        std::vector<double> weights = RandomGenerator::GenerateParetoVector(size, alpha, mode);
+        std::vector<double> weights = GenerateParetoVector(size, alpha, mode);
         graph.SetWeights(weights);
 
         double mean = 0.0;
@@ -185,7 +188,7 @@ public:
             FillPowerLawParams(powerLawParams, result, counterGood, 0); 
             x_min = result.xmin;
             x_min_bad = writeDegreeDistribution(degreesCutForGood, x_min, "temp_degrees/temp_good.txt", result.alpha,
-                                              paretoDegree, mode, threshold, true);
+                                              paretoDegree, mode, threshold, false);
         }
         else
         {
@@ -318,18 +321,8 @@ private:
         //create array for degree frequences
         std::vector<int> degProb(sizeDegree + 1, 0);
 
-  /*      std::vector<int> cutDegrees;
-
-        for (int i = 0; i < degSize; ++i)
-        {
-            if (VECTOR(degrees)[i] >= min)
-            {
-                cutDegrees.push_back(VECTOR(degrees)[i]);
-            }
-        }*/
-
         //create array for calcCommulate_func
-        std::vector<double> calcCommulateDegrees(max, 0.0);
+        std::vector<int> calcCommulateDegrees(degSize + 1, 0.0);
 
         if (calcCommulate)
         {
@@ -337,9 +330,9 @@ private:
             {
                 int degree = VECTOR(degrees)[i];
 
-                for (int j = 0; j <= degree; ++j)
+                for (int i = 0; i <= degree; i++)
                 {
-                    calcCommulateDegrees[j]++;
+                    calcCommulateDegrees[i]++;
                 }
             }
         }
@@ -350,11 +343,12 @@ private:
             {
                 degProb[VECTOR(degrees)[i] - min]++;    
             }
+            
         }
 
         if (calcCommulate)
         {
-            for (int i = 0; i < calcCommulateDegrees.size(); ++i)
+            for (int i = 0; i < degSize; ++i)
             {
                 calcCommulateDegrees[i] /= degSize;
                 reportCalcCommulate << calcCommulateDegrees[i] << " ";
@@ -377,6 +371,53 @@ private:
         reportCalcCommulate.close();
 
         return max;
+    }
+
+    // Возвращает равномерно выбранный вектор единичной длины
+    std::vector<double> GenerateUnitNormalVector(int dimension)
+    {
+        Normal z;
+        double radius = 0.0;
+
+        std::vector<double> coords;
+
+        for (int j = 0; j < dimension; ++j)
+        {
+            double value = z.Next();
+            coords.push_back(value);
+            radius += ((double) value * (double) value);
+        }
+
+        radius = sqrt(radius);
+
+        for (int j = 0; j < dimension; ++j)
+        {
+            coords[j] /= radius; 
+        }
+
+        return coords;
+    }
+
+    // Возвращает вектор величин из Парето распределения с указанными параметрами
+    std::vector<double> GenerateParetoVector(int size, double alpha, double mode)
+    {
+        Real shape = alpha;
+        Pareto p(shape);
+
+        std::vector<double> values(size);
+
+        for (int i = 0; i < size; ++i)
+        {
+            values[i] = GeneratePareto(p, mode);
+        }
+
+        return values;
+    }
+
+    // Возвращает величину из Парето распределения с указанным начальным значением
+    double GeneratePareto(Pareto p, double mode)
+    {
+        return p.Next() + mode - 1.0;
     }
 
     // Неориентированный граф

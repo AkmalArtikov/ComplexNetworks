@@ -66,7 +66,7 @@ void WritePowerLawResults(PowerLawParams powerLawParams, std::ofstream& report, 
 }
 
 
-void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, bool calcClusterCoef)
+void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, bool calc_clusterCoef)
 {
     std::ofstream report ("report.txt", std::fstream::out | std::fstream::app);
     std::ofstream reportCur ("results_graphs/report.txt", std::fstream::out | std::fstream::trunc);
@@ -81,7 +81,7 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     clock_t t;
     t = clock();
 
-    Model model(size, dimension, calcClusterCoef);   
+    Model model(size, dimension);   
 
     std::cout << "Generating sphere" << std::endl;
     model.GenerateCoords();
@@ -107,7 +107,7 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     t = clock() - t;
     float cur_time = ((float)t)/CLOCKS_PER_SEC;
 
-    if (calcClusterCoef) 
+    if (calc_clusterCoef)
     {
         WriteMessage(" ", report, reportCur);
         double clusterCoef = model.GetAverageLocalClusterCoef();
@@ -137,10 +137,10 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     report << " ----------------------------------------" << std::endl;
     report << std::endl;
     reportCur << std::endl; 
-     
+
     reportCur.close();
     report.close(); 
-}   
+}
 
 int main(int argc, char* argv[])
 {
@@ -163,20 +163,23 @@ int main(int argc, char* argv[])
     double mode = atof(argv[4]);  
     double threshold = atof(argv[5]);
     bool calc_clusterCoef = atoi(argv[6]);
- 
+
     GenerateReport(size, dimension, alpha, mode, threshold, calc_clusterCoef);
 
     return 0;
-}   
+}
 
 //больший размер?
 
-//exp - странные результаты/ снизить threshold? 
+//exp - странные результаты/ снизить threshold?
 
 //перебрать другие случаи доказанные
 //изменение параметроов (размер, размерность, граница, степень распределения) и отслеживание другие (клас. коэф, power-law)
 
 //диаметр графа?
 
+//комулитивную функцию норм посчитать!!! допроверить то, что доказано. Заплить все на сервак (Дима) и считать там. 
+
 //exp / (w*w')???? Power-law наоборот????
- 
+
+//отрисовка этих штук

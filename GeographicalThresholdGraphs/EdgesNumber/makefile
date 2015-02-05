@@ -1,6 +1,6 @@
-all: test 
-test: experiment.cpp newran.o myexcept.o extreal.o
-	g++ -o test experiment.cpp newran.o myexcept.o extreal.o model.cpp graph.cpp random.cpp -I/usr/local/include/igraph -L/usr/local/lib -ligraph
+all: test
+test: number_edges_experiment.cpp newran.o myexcept.o extreal.o
+	g++ newran.o myexcept.o extreal.o model.cpp graph.cpp -o test number_edges_experiment.cpp -I/usr/local/include/igraph -L/usr/local/lib -ligraph
 
 newran.o: newran02/newran.cpp
 	g++ -g -w -c newran02/newran.cpp
