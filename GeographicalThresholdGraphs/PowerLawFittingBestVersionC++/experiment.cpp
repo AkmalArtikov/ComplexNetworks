@@ -13,7 +13,7 @@ namespace patch
     template < typename T > std::string to_string( const T& n )
     {
         std::ostringstream stm ; 
-        stm << n ;
+        stm << n ; 
         return stm.str() ;
     }
 }
@@ -92,7 +92,7 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     std::string meanValue = "Mean value of distibution is  " + patch::to_string(mean);
     WriteMessage(meanValue, report, reportCur);
 
-    std::string genEdges = "Generating edges :  w*w'*(x,x')";
+    std::string genEdges = "Generating edges :  w*w'*e^(x,x')";
     WriteMessage(genEdges, report, reportCur);
     model.GenerateEdges(threshold);
   
@@ -100,9 +100,7 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
                             " vertices and " + patch::to_string(model.GetEdgesNumber()) + " edges";
     WriteMessage(sizeOfModel, report, reportCur);
 
-    std::cout << "Power-Law fitting" << std::endl;
-    PowerLawParams powerLawParams = model.PowerLawFit(mode, alpha, threshold);
-    WritePowerLawResults(powerLawParams, report, reportCur);
+  /*  */
    
     t = clock() - t;
     float cur_time = ((float)t)/CLOCKS_PER_SEC;
@@ -119,11 +117,16 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
         clusterCoef = model.GetGlobalClusterCoef();
         clusterString = "Graph has Global Cluster Coefficient: " + patch::to_string(clusterCoef);
         WriteMessage(clusterString, report, reportCur);
+
+        WriteMessage(" ", report, reportCur);
+        double lenght = model.GetAverageShortestPathLength();
+        std::string lengthString = "Graph has Average Shortest Path Length: " + patch::to_string(lenght);
+        WriteMessage(lengthString, report, reportCur);
     }
-    
+     
     WriteMessage(" ", report, reportCur);
     std::string modelTime = "It took " + patch::to_string(cur_time) + " seconds";
-    WriteMessage(modelTime, report, reportCur);
+    WriteMessage(modelTime, report, reportCur);     
 
     time_t rawtime;
     struct tm * timeinfo;

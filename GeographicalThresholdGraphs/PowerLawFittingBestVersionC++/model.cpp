@@ -94,7 +94,7 @@ public:
                 }
 
                 // Получаем взаимодействие между вершинами
-                double value = GetSimpleModelInteraction(dot, i, j);
+                double value = GetExpModelInteraction(dot, i, j);
 
                 // Если полученное значение больше границы - доабвляем ребро
                 if (value >= threshold)
@@ -121,6 +121,12 @@ public:
     double GetAverageLocalClusterCoef() const
     {
         return graph.GetAverageLocalClusterCoef();
+    }
+
+    // Возвращает среднюю длину кратчайшего пути между вершинами
+    double GetAverageShortestPathLength() const
+    {
+        return graph.GetAverageShortestPathLength();
     }
 
     // Возвращает глобальный кластерный коэффициент
@@ -153,7 +159,7 @@ public:
         igraph_vector_reserve(&degreesCutForBad, size / 2);
 
         // Получаем условие на разделение вершин на категории
-        double thresh = GetSimpleModelThreshold(threshold, mode);
+        double thresh = GetExpModelThreshold(threshold, mode);
 
         int counterGood = 0;
         int counterBad = 0;
@@ -265,7 +271,7 @@ private:
         powerLawResult.alpha = result.alpha;
         powerLawResult.xmin = result.xmin;
         powerLawResult.logLikehood = result.L;
-        powerLawResult.probKS = result.D;
+        powerLawResult.probKS = result.D; 
         powerLawResult.pValueKS = result.p;
         powerLawResult.size = size;
 

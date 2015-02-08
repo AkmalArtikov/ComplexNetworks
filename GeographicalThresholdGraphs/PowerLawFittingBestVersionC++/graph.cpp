@@ -1,6 +1,7 @@
 #ifndef GRAPH
 #define GRAPH
 #include <iostream>
+#include <limits>
 
 #include <vector>
 
@@ -152,6 +153,67 @@ public:
         }
 
         return closedTriplets / connectedTriplets;
+    }
+
+    double GetAverageShortestPathLength() const
+    {
+        if (!calcCluster)
+        {
+            return 0;
+        }
+
+        std::vector<std::vector<int> > lengths(size, std::vector<int>(size, std::numeric_limits<int>::max()));
+
+        for (int i = 0; i < size; ++i)
+        {
+            for (int j = 0; j < size; ++j)
+            {
+                if (i == j)
+                {
+                    lengths[i][j] = 0;
+                    continue;
+                }
+
+                if (adjMatrix[i][j])
+                {
+                    lengths[i][j] = 1;
+                }
+            }
+        }
+
+        for (int k = 0; k < size; ++k)
+        {
+            for (int i = 0; i < size; ++i)
+            {
+                for (int j = 0; j < size; ++j)
+                {
+                    if (lengths[i][k] == std::numeric_limits<int>::max() || 
+                        lengths[k][j] == std::numeric_limits<int>::max())
+                    {
+                        continue;
+                    }
+                      
+                    lengths[i][j] = std::min(lengths[i][j], lengths[i][k] + lengths[k][j]);
+                }
+            }
+        }
+
+        long double result = 0.0;
+        long long counter = 0;
+
+        for (int i = 0; i < size; ++i)
+        {
+            for (int j = 0; j < size; ++j)
+            {
+                if (lengths[i][j] < size)
+                {
+                    result += lengths[i][j];
+                    counter++;
+                }
+            }
+        }
+
+        return result / counter;
     }
 
 private:

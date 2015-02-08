@@ -7122,3 +7122,1341 @@ Current local time and date: Thu Feb  5 18:26:09 2015
 
  ----------------------------------------
 
+size - 300000; dimension - 3; alpha - 3; mode - 0.4; threshold - 0.6
+size - 300000; dimension - 3; alpha - 3; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.90253
+Generating edges :  w*w'*(x,x')
+Graph has 300000 vertices and 3794748936 edges
+ 
+Power-Law with good vertices. Has 267436 vertices 
+2.08244 6505 -2.39803e+06 0.108992 0 
+ 
+Power-Law with bad vertices. Has 32564 vertices 
+3.90834 61135 -364166 0.139468 0 
+ 
+Power-Law with all vertices. Has 300000 vertices 
+1.8826 6505 -2.85065e+06 0.0910162 0 
+ 
+It took 6533.58 seconds
+Current local time and date: Thu Feb  5 21:45:58 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 5; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.650004
+Generating edges :  w*w'*(x,x')
+Graph has 300000 vertices and 985670322 edges
+ 
+Power-Law with good vertices. Has 292559 vertices 
+1.90864 1633 -1.80094e+06 0.073377 0 
+ 
+Power-Law with bad vertices. Has 7441 vertices 
+3.73721 45230 -81399.2 0.115992 0 
+ 
+Power-Law with all vertices. Has 300000 vertices 
+1.83397 1633 -1.90827e+06 0.0603096 0 
+ 
+It took 5218.53 seconds
+Current local time and date: Fri Feb  6 00:01:47 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 7; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.566391
+Generating edges :  w*w'*(x,x')
+Graph has 300000 vertices and 256961154 edges
+ 
+Power-Law with good vertices. Has 298380 vertices 
+1.80541 380 -1.33735e+06 0.0529516 0 
+ 
+Power-Law with bad vertices. Has 1620 vertices 
+3.65344 35894 -17575.3 0.11441 8.92542e-19 
+ 
+Power-Law with all vertices. Has 300000 vertices 
+1.78209 380 -1.36166e+06 0.0473438 0 
+ 
+It took 7890.19 seconds
+Current local time and date: Fri Feb  6 04:42:08 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 10; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.511215
+Generating edges :  w*w'*(x,x')
+Graph has 300000 vertices and 36181642 edges
+ 
+Power-Law with good vertices. Has 299809 vertices 
+1.94415 257 -291081 0.031554 2.81437e-33 
+ 
+Power-Law with bad vertices. Has 191 vertices 
+3.53602 27810 -2000.31 0.11676 0.0122091 
+ 
+Power-Law with all vertices. Has 300000 vertices 
+1.92657 257 -294029 0.0277202 6.60438e-26 
+ 
+It took 4281.61 seconds
+Current local time and date: Fri Feb  6 16:07:45 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599843
+Generating edges :  w*w'*(x,x')
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599977
+Generating edges :  w*w'*e^(x,x')
+Graph has 300000 vertices and 9032948186 edges
+ 
+Power-Law with good vertices. Has 171631 vertices 
+3.23927 19767 -1.78477e+06 0.126103 0 
+ 
+Power-Law with bad vertices. Has 128369 vertices 
+2.82202 52797 -1.50923e+06 0.115434 0 
+ 
+Power-Law with all vertices. Has 300000 vertices 
+2.0952 19767 -3.48852e+06 0.098669 0 
+ 
+It took 11277.5 seconds
+Current local time and date: Sat Feb  7 06:07:52 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599973
+Generating edges :  w*w'*e^(x,x')
+Graph has 300000 vertices and 9029346304 edges
+ 
+Power-Law with good vertices. Has 171876 vertices 
+65.0245 51022 -28106.3 0.119544 0 
+ 
+Power-Law with bad vertices. Has 128124 vertices 
+2.8216 52913 -1.50308e+06 0.11677 0 
+ 
+Power-Law with all vertices. Has 300000 vertices 
+2.76955 51022 -1.55987e+06 0.118991 0 
+ 
+It took 10186.7 seconds
+Current local time and date: Sat Feb  7 18:22:03 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 6; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.599426
+Generating edges :  w*w'*e^(x,x')
+Graph has 300000 vertices and 9006526910 edges
+ 
+Power-Law with good vertices. Has 171732 vertices 
+64.9812 50914 -29001.8 0.112211 0 
+ 
+Power-Law with bad vertices. Has 128268 vertices 
+2.83005 52960 -1.49997e+06 0.116011 0 
+ 
+Power-Law with all vertices. Has 300000 vertices 
+2.77393 50914 -1.56213e+06 0.118129 0 
+ 
+It took 8735.36 seconds
+Current local time and date: Sun Feb  8 02:09:37 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.54225
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 64372 edges
+ 
+Power-Law with good vertices. Has 687 vertices 
+19.1923 131 -87.7601 0.112241 0.858358 
+ 
+Power-Law with bad vertices. Has 313 vertices 
+2.9564 154 -1597.56 0.122246 0.000589404 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.79722 131 -1980.15 0.103376 0.00142678 
+ 
+It took 0.109 seconds
+Current local time and date: Sun Feb  8 02:21:37 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.544169
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 65624 edges
+ 
+Power-Law with good vertices. Has 695 vertices 
+12.1402 123 -156.945 0.105187 0.701863 
+ 
+Power-Law with bad vertices. Has 305 vertices 
+2.84113 157 -1586.13 0.147715 1.89954e-05 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.58813 123 -2073.29 0.125575 3.5338e-05 
+ 
+It took 0.125 seconds
+Current local time and date: Sun Feb  8 02:21:40 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.538598
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 61921 edges
+ 
+Power-Law with good vertices. Has 689 vertices 
+3.41199 52 -2005.2 0.104961 0.000103304 
+ 
+Power-Law with bad vertices. Has 311 vertices 
+2.85959 139 -1713.43 0.109044 0.00188324 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.16695 52 -4283.38 0.0967244 1.35915e-06 
+ 
+It took 0.109 seconds
+Current local time and date: Sun Feb  8 02:21:41 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.549253
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 68996 edges
+ 
+Power-Law with good vertices. Has 665 vertices 
+17.1559 130 -84.8861 0.0830637 0.992275 
+ 
+Power-Law with bad vertices. Has 335 vertices 
+2.89549 154 -1794.19 0.134008 3.75639e-05 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.66342 130 -2144.01 0.139448 1.66135e-06 
+ 
+It took 0.125 seconds
+Current local time and date: Sun Feb  8 02:21:42 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.545385
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 66580 edges
+ 
+Power-Law with good vertices. Has 653 vertices 
+22.2493 127 -84.967 0.094925 0.949753 
+ 
+Power-Law with bad vertices. Has 347 vertices 
+2.98743 144 -1908.16 0.129336 3.20801e-05 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.78669 127 -2188.01 0.131985 4.09093e-06 
+ 
+It took 0.109 seconds
+Current local time and date: Sun Feb  8 02:21:43 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.546904
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 66979 edges
+ 
+Power-Law with good vertices. Has 665 vertices 
+10.1461 112 -321.318 0.0774215 0.660224 
+ 
+Power-Law with bad vertices. Has 335 vertices 
+3.01282 154 -1737.63 0.134738 3.99944e-05 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.61717 112 -2480.98 0.113042 3.93524e-05 
+ 
+It took 0.125 seconds
+Current local time and date: Sun Feb  8 02:21:44 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.54718
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 67387 edges
+ 
+Power-Law with good vertices. Has 676 vertices 
+6.27727 94 -666.516 0.110247 0.0371226 
+ 
+Power-Law with bad vertices. Has 324 vertices 
+2.89551 151 -1764.59 0.125474 0.000163017 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.42828 94 -2870.19 0.121475 1.1126e-06 
+ 
+It took 0.109 seconds
+Current local time and date: Sun Feb  8 02:21:45 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.53739
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 61496 edges
+ 
+Power-Law with good vertices. Has 695 vertices 
+13.9763 123 -179.417 0.0729457 0.93614 
+ 
+Power-Law with bad vertices. Has 305 vertices 
+3.06096 156 -1440.49 0.151859 2.15474e-05 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.86387 123 -2036.88 0.129388 1.3314e-05 
+ 
+It took 0.14 seconds
+Current local time and date: Sun Feb  8 02:21:46 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.545478
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 65712 edges
+ 
+Power-Law with good vertices. Has 672 vertices 
+17.7416 127 -92.4832 0.0835343 0.984891 
+ 
+Power-Law with bad vertices. Has 328 vertices 
+3.15716 167 -1498.92 0.127756 0.000439979 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.75145 127 -2094.42 0.123019 3.93708e-05 
+ 
+It took 0.125 seconds
+Current local time and date: Sun Feb  8 02:21:47 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.536496
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 60418 edges
+ 
+Power-Law with good vertices. Has 695 vertices 
+10.7748 107 -247.862 0.0907964 0.601876 
+ 
+Power-Law with bad vertices. Has 305 vertices 
+2.99748 147 -1576.35 0.114193 0.00166046 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.57677 107 -2198.34 0.124652 1.68443e-05 
+ 
+It took 0.125 seconds
+Current local time and date: Sun Feb  8 02:21:48 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.547307
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 66914 edges
+ 
+Power-Law with good vertices. Has 685 vertices 
+12.5223 117 -190.446 0.0794322 0.871589 
+ 
+Power-Law with bad vertices. Has 315 vertices 
+2.85353 151 -1703.63 0.12667 0.000200066 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.55509 117 -2210.83 0.125228 1.76841e-05 
+ 
+It took 0.125 seconds
+Current local time and date: Sun Feb  8 02:21:49 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.547307
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 66914 edges
+ 
+Power-Law with good vertices. Has 685 vertices 
+12.5223 117 -190.446 0.0794322 0.871589 
+ 
+Power-Law with bad vertices. Has 315 vertices 
+2.85353 151 -1703.63 0.12667 0.000200066 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.55509 117 -2210.83 0.125228 1.76841e-05 
+ 
+It took 0.125 seconds
+Current local time and date: Sun Feb  8 02:21:50 2015
+
+ ----------------------------------------
+
+size - 1000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.541587
+Generating edges :  w*w'*e^(x,x')
+Graph has 1000 vertices and 63465 edges
+ 
+Power-Law with good vertices. Has 685 vertices 
+8.94684 104 -365.594 0.0831051 0.501083 
+ 
+Power-Law with bad vertices. Has 315 vertices 
+2.97101 153 -1563.45 0.121975 0.000709008 
+ 
+Power-Law with all vertices. Has 1000 vertices 
+2.55448 104 -2418.35 0.115379 3.26551e-05 
+ 
+Graph has Average Local Cluster Coefficient: 0.014
+ 
+Graph has Global Cluster Coefficient: 0.192385
+ 
+Graph has Average Shortest Path Length: -1.5766e+09
+ 
+It took 0.124 seconds
+Current local time and date: Sun Feb  8 02:23:49 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.52695
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 551 edges
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.51112
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 429 edges
+size - 500; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.534935
+Generating edges :  w*w'*e^(x,x')
+Graph has 500 vertices and 14852 edges
+size - 900; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.551533
+Generating edges :  w*w'*e^(x,x')
+Graph has 900 vertices and 56891 edges
+ 
+Power-Law with good vertices. Has 599 vertices 
+7.95366 95 -412.869 0.102749 0.195851 
+ 
+Power-Law with bad vertices. Has 301 vertices 
+2.87676 139 -1610.12 0.13927 4.47928e-05 
+ 
+Power-Law with all vertices. Has 900 vertices 
+2.48753 95 -2393.45 0.133582 8.52809e-07 
+ 
+Graph has Average Local Cluster Coefficient: 0.01
+ 
+size - 900; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.539898
+Generating edges :  w*w'*e^(x,x')
+Graph has 900 vertices and 50727 edges
+ 
+Power-Law with good vertices. Has 616 vertices 
+15.6351 108 -116.402 0.0614458 0.99878 
+ 
+Power-Law with bad vertices. Has 284 vertices 
+3.02562 143 -1293.03 0.127499 0.00133063 
+ 
+Power-Law with all vertices. Has 900 vertices 
+2.71618 108 -1841.74 0.111365 0.000679747 
+ 
+Graph has Average Local Cluster Coefficient: 0.0255556
+ 
+size - 900; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.544066
+Generating edges :  w*w'*e^(x,x')
+Graph has 900 vertices and 52471 edges
+ 
+Power-Law with good vertices. Has 610 vertices 
+20.5656 116 -87.6648 0.0933013 0.950102 
+ 
+Power-Law with bad vertices. Has 290 vertices 
+2.94397 133 -1468.39 0.113079 0.00286915 
+ 
+Power-Law with all vertices. Has 900 vertices 
+2.86728 116 -1805.52 0.0928435 0.0081776 
+ 
+Graph has Average Local Cluster Coefficient: 0.0211111
+ 
+size - 900; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.541028
+Generating edges :  w*w'*e^(x,x')
+Graph has 900 vertices and 51804 edges
+ 
+Power-Law with good vertices. Has 608 vertices 
+15.6055 109 -113.761 0.0863091 0.945674 
+ 
+Power-Law with bad vertices. Has 292 vertices 
+2.98262 132 -1521.53 0.135044 0.000117935 
+ 
+Power-Law with all vertices. Has 900 vertices 
+2.70668 109 -1876.24 0.126317 5.87601e-05 
+ 
+Graph has Average Local Cluster Coefficient: 0.00888889
+ 
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.53513
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 29379 edges
+ 
+Power-Law with good vertices. Has 481 vertices 
+39.4572 90 -22.5443 0.0637749 1 
+ 
+Power-Law with bad vertices. Has 219 vertices 
+2.91731 96 -1113.07 0.118115 0.00655944 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.8613 90 -1217.22 0.11024 0.00843303 
+ 
+Graph has Average Local Cluster Coefficient: 0.0528571
+ 
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.551804
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 34137 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.543405
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 31593 edges
+ 
+Power-Law with good vertices. Has 483 vertices 
+15.1906 86 -88.8977 0.0875736 0.971333 
+ 
+Power-Law with bad vertices. Has 217 vertices 
+2.94547 106 -1095.87 0.115724 0.00968776 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.66655 86 -1373.29 0.115386 0.00271075 
+ 
+Graph has Average Local Cluster Coefficient: 0.0371429
+ 
+Graph has Global Cluster Coefficient: 0.0371429
+ 
+Graph has Average Shortest Path Length: -1.51913e+09
+ 
+It took 0.078 seconds
+Current local time and date: Sun Feb  8 02:26:08 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.544438
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 32070 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.533057
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 28860 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.537491
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 30333 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.534835
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 29432 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.537171
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 30530 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.553385
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 34692 edges
+ 
+Power-Law with good vertices. Has 462 vertices 
+13.062 90 -108.077 0.0926775 0.924526 
+ 
+Power-Law with bad vertices. Has 238 vertices 
+3.09983 116 -1151.53 0.0834832 0.107081 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.68275 90 -1508.85 0.140127 4.77593e-05 
+ 
+Graph has Average Local Cluster Coefficient: 0.04
+ 
+Graph has Global Cluster Coefficient: 0.04
+ 
+Graph has Average Shortest Path Length: -1.53101e+09
+ 
+It took 0.078 seconds
+Current local time and date: Sun Feb  8 02:29:10 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.533927
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 28812 edges
+ 
+Power-Law with good vertices. Has 480 vertices 
+16.8643 83 -59.6952 0.0836401 0.997891 
+ 
+Power-Law with bad vertices. Has 220 vertices 
+3.12601 100 -1084.51 0.103139 0.0260682 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.75248 83 -1306.7 0.136287 0.000258762 
+ 
+Graph has Average Local Cluster Coefficient: 0.0514286
+ 
+Graph has Global Cluster Coefficient: 0.0514286
+ 
+Graph has Average Shortest Path Length: -1.54281e+09
+ 
+It took 0.078 seconds
+Current local time and date: Sun Feb  8 02:31:19 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.540145
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 30501 edges
+ 
+Power-Law with good vertices. Has 482 vertices 
+12.4312 80 -90.8358 0.073134 0.997134 
+ 
+Power-Law with bad vertices. Has 218 vertices 
+2.94486 108 -983.654 0.107823 0.0318845 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.59256 80 -1373.43 0.134198 0.000264037 
+ 
+Graph has Average Local Cluster Coefficient: 0.0585714
+ 
+Graph has Global Cluster Coefficient: 0.0585714
+ 
+Graph has Average Shortest Path Length: -1.61992e+09
+ 
+It took 0.078 seconds
+Current local time and date: Sun Feb  8 02:33:26 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.542293
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 31296 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.542425
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 31442 edges
+ 
+Power-Law with good vertices. Has 474 vertices 
+33.0917 89 -16.4064 0.0802687 1 
+ 
+Power-Law with bad vertices. Has 226 vertices 
+2.8062 98 -1169.34 0.140074 0.00050711 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.68009 89 -1289.69 0.145582 0.000107189 
+ 
+Graph has Average Local Cluster Coefficient: 0.0371429
+ 
+Graph has Global Cluster Coefficient: 0.0371429
+ 
+Graph has Average Shortest Path Length: -1.55353e+09
+ 
+It took 0.077 seconds
+Current local time and date: Sun Feb  8 02:34:57 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.552538
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 34364 edges
+ 
+Power-Law with good vertices. Has 455 vertices 
+31.1227 98 -30.9632 0.0639315 1 
+ 
+Power-Law with bad vertices. Has 245 vertices 
+2.94778 108 -1171.06 0.114234 0.00790858 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.90054 98 -1365.88 0.10026 0.0131295 
+ 
+Graph has Average Local Cluster Coefficient: 0.03
+ 
+Graph has Global Cluster Coefficient: 0.03
+ 
+Graph has Average Shortest Path Length: -1.60002e+09
+ 
+It took 0.093 seconds
+Current local time and date: Sun Feb  8 02:36:22 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.544354
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 31891 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.532856
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 28330 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.536292
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 29159 edges
+ 
+Power-Law with good vertices. Has 502 vertices 
+17.1514 84 -64.9539 0.109028 0.937855 
+ 
+Power-Law with bad vertices. Has 198 vertices 
+2.74243 100 -977.601 0.123762 0.00968496 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.63099 84 -1215.11 0.119879 0.0036929 
+ 
+Graph has Average Local Cluster Coefficient: 0.0428571
+ 
+Graph has Global Cluster Coefficient: 0.0428571
+ 
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.543261
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 31556 edges
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.545735
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 32829 edges
+ 
+Power-Law with good vertices. Has 482 vertices 
+11.1409 83 -169.363 0.0719721 0.94652 
+ 
+Power-Law with bad vertices. Has 218 vertices 
+2.8481 110 -1068.27 0.170499 3.18843e-05 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.61767 83 -1498.41 0.125242 0.000419226 
+ 
+Graph has Average Local Cluster Coefficient: 0.0385714
+ 
+Graph has Global Cluster Coefficient: 0.0385714
+ 
+Graph has Average Shortest Path Length: nan
+ 
+It took 0.078 seconds
+Current local time and date: Sun Feb  8 02:39:11 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.540985
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 31515 edges
+ 
+Power-Law with good vertices. Has 485 vertices 
+89.7028 106 -4.79087 0.0666788 1 
+ 
+Power-Law with bad vertices. Has 215 vertices 
+2.89139 108 -1063.59 0.174986 1.66386e-05 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.90164 106 -1102.76 0.166194 3.36389e-05 
+ 
+Graph has Average Local Cluster Coefficient: 0.0442857
+ 
+Graph has Global Cluster Coefficient: 0.0442857
+ 
+Graph has Average Shortest Path Length: nan
+ 
+It took 0.093 seconds
+Current local time and date: Sun Feb  8 02:41:56 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.544974
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 32966 edges
+ 
+Power-Law with good vertices. Has 452 vertices 
+13.8871 82 -111.079 0.0619951 0.998593 
+ 
+Power-Law with bad vertices. Has 248 vertices 
+3.23923 114 -1138.92 0.120931 0.00405582 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.62436 82 -1581.8 0.169854 1.36191e-07 
+ 
+Graph has Average Local Cluster Coefficient: 0.0514286
+ 
+Graph has Global Cluster Coefficient: 0.207986
+ 
+Graph has Average Shortest Path Length: 1.90752
+ 
+It took 0.078 seconds
+Current local time and date: Sun Feb  8 02:43:23 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.556307
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 36706 edges
+ 
+Power-Law with good vertices. Has 445 vertices 
+22.7451 95 -67.9744 0.0667253 0.999748 
+ 
+Power-Law with bad vertices. Has 255 vertices 
+3.13812 120 -1208.03 0.149877 0.000101995 
+ 
+Power-Law with all vertices. Has 700 vertices 
+2.75185 95 -1561.9 0.146734 1.11146e-05 
+ 
+Graph has Average Local Cluster Coefficient: 0.0342857
+ 
+Graph has Global Cluster Coefficient: 0.21954
+ 
+Graph has Average Shortest Path Length: 1.88298
+ 
+It took 0.077 seconds
+Current local time and date: Sun Feb  8 02:44:44 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.545015
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 609 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.37
+ 
+Graph has Global Cluster Coefficient: 0.160369
+ 
+Graph has Average Shortest Path Length: 2.0882
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:43 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.522204
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 503 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.36
+ 
+Graph has Global Cluster Coefficient: 0.194349
+ 
+Graph has Average Shortest Path Length: 2.37505
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:47 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.529308
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 587 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.35
+ 
+Graph has Global Cluster Coefficient: 0.204483
+ 
+Graph has Average Shortest Path Length: 2.354
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:48 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.527676
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 549 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.37
+ 
+Graph has Global Cluster Coefficient: 0.193402
+ 
+Graph has Average Shortest Path Length: 2.2866
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:49 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.527676
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 549 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.37
+ 
+Graph has Global Cluster Coefficient: 0.193402
+ 
+Graph has Average Shortest Path Length: 2.2866
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:49 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.5331
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 512 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.42
+ 
+Graph has Global Cluster Coefficient: 0.136347
+ 
+Graph has Average Shortest Path Length: 2.0594
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:50 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.5331
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 512 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.42
+ 
+Graph has Global Cluster Coefficient: 0.136347
+ 
+Graph has Average Shortest Path Length: 2.0594
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:50 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.535241
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 596 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.38
+ 
+Graph has Global Cluster Coefficient: 0.18433
+ 
+Graph has Average Shortest Path Length: 2.2078
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:51 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.534582
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 536 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.43
+ 
+Graph has Global Cluster Coefficient: 0.139979
+ 
+Graph has Average Shortest Path Length: 2.0582
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 02:55:52 2015
+
+ ----------------------------------------
+
+size - 600; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.545694
+Generating edges :  w*w'*e^(x,x')
+Graph has 600 vertices and 23618 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.0733333
+ 
+size - 500; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.531926
+Generating edges :  w*w'*e^(x,x')
+Graph has 500 vertices and 14498 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.102
+ 
+Graph has Global Cluster Coefficient: 0.192158
+ 
+Graph has Average Shortest Path Length: 2.00402
+ 
+It took 0.031 seconds
+Current local time and date: Sun Feb  8 02:56:18 2015
+
+ ----------------------------------------
+
+size - 500; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.547419
+Generating edges :  w*w'*e^(x,x')
+Graph has 500 vertices and 17108 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.09
+ 
+Graph has Global Cluster Coefficient: 0.201375
+ 
+Graph has Average Shortest Path Length: 1.88791
+ 
+It took 0.031 seconds
+Current local time and date: Sun Feb  8 02:56:36 2015
+
+ ----------------------------------------
+
+size - 500; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.530702
+Generating edges :  w*w'*e^(x,x')
+Graph has 500 vertices and 14206 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.116
+ 
+Graph has Global Cluster Coefficient: 0.187925
+ 
+Graph has Average Shortest Path Length: 1.98197
+ 
+It took 0.031 seconds
+Current local time and date: Sun Feb  8 02:58:03 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.547129
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 6 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.1
+ 
+Graph has Global Cluster Coefficient: 0.1
+ 
+Graph has Average Shortest Path Length: 1.3
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:29 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.595652
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 14 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.3
+ 
+Graph has Global Cluster Coefficient: 0.269663
+ 
+Graph has Average Shortest Path Length: 1.60976
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:31 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.486258
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 3 edges
+ 
+Graph has Average Local Cluster Coefficient: 0
+ 
+Graph has Global Cluster Coefficient: 0
+ 
+Graph has Average Shortest Path Length: 0.555556
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:32 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.486258
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 3 edges
+ 
+Graph has Average Local Cluster Coefficient: 0
+ 
+Graph has Global Cluster Coefficient: 0
+ 
+Graph has Average Shortest Path Length: 0.555556
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:32 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.486258
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 3 edges
+ 
+Graph has Average Local Cluster Coefficient: 0
+ 
+Graph has Global Cluster Coefficient: 0
+ 
+Graph has Average Shortest Path Length: 0.555556
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:32 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.49869
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 2 edges
+ 
+Graph has Average Local Cluster Coefficient: 0
+ 
+Graph has Global Cluster Coefficient: 0
+ 
+Graph has Average Shortest Path Length: 0.5
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:33 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.49869
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 2 edges
+ 
+Graph has Average Local Cluster Coefficient: 0
+ 
+Graph has Global Cluster Coefficient: 0
+ 
+Graph has Average Shortest Path Length: 0.5
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:33 2015
+
+ ----------------------------------------
+
+size - 10; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.591637
+Generating edges :  w*w'*e^(x,x')
+Graph has 10 vertices and 7 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.2
+ 
+Graph has Global Cluster Coefficient: 0.15
+ 
+Graph has Average Shortest Path Length: 1.15
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:34 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.538541
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 655 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.39
+ 
+Graph has Global Cluster Coefficient: 0.18606
+ 
+Graph has Average Shortest Path Length: 2.044
+ 
+It took 0.015 seconds
+Current local time and date: Sun Feb  8 03:00:40 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.540099
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 677 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.38
+ 
+Graph has Global Cluster Coefficient: 0.204197
+ 
+Graph has Average Shortest Path Length: 2.117
+ 
+It took 0.015 seconds
+Current local time and date: Sun Feb  8 03:00:42 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.541224
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 680 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.28
+ 
+Graph has Global Cluster Coefficient: 0.210343
+ 
+Graph has Average Shortest Path Length: 2.2504
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:43 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.554371
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 723 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.26
+ 
+Graph has Global Cluster Coefficient: 0.198824
+ 
+Graph has Average Shortest Path Length: 2.0562
+ 
+It took 0.015 seconds
+Current local time and date: Sun Feb  8 03:00:44 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.549854
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 701 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.33
+ 
+Graph has Global Cluster Coefficient: 0.2067
+ 
+Graph has Average Shortest Path Length: 2.0866
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:45 2015
+
+ ----------------------------------------
+
+size - 100; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.538545
+Generating edges :  w*w'*e^(x,x')
+Graph has 100 vertices and 596 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.39
+ 
+Graph has Global Cluster Coefficient: 0.173779
+ 
+Graph has Average Shortest Path Length: 2.1372
+ 
+It took 0 seconds
+Current local time and date: Sun Feb  8 03:00:46 2015
+
+ ----------------------------------------
+
+size - 2500; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.549831
+Generating edges :  w*w'*e^(x,x')
+Graph has 2500 vertices and 434248 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.0004
+ 
+Graph has Global Cluster Coefficient: 0.204837
+ 
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.539611
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 525 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.124286
+ 
+Graph has Global Cluster Coefficient: 0.0361386
+ 
+Graph has Average Shortest Path Length: 3.31836
+ 
+It took 0.046 seconds
+Current local time and date: Sun Feb  8 03:31:14 2015
+
+ ----------------------------------------
+
+size - 700; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.540697
+Generating edges :  w*w'*e^(x,x')
+Graph has 700 vertices and 615 edges
+ 
+Graph has Average Local Cluster Coefficient: 0.12
+ 
+Graph has Global Cluster Coefficient: 0.0264544
+ 
+Graph has Average Shortest Path Length: 3.46202
+ 
+It took 0.031 seconds
+Current local time and date: Sun Feb  8 03:33:43 2015
+
+ ----------------------------------------
+
+size - 300000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
+Generating weights :  Pareto
+Mean value of distibution is  0.542591
+Generating edges :  w*w'*e^(x,x')
