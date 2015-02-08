@@ -100,7 +100,9 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
                             " vertices and " + patch::to_string(model.GetEdgesNumber()) + " edges";
     WriteMessage(sizeOfModel, report, reportCur);
 
-  /*  */
+    std::cout << "Power-Law fitting" << std::endl;
+    PowerLawParams powerLawParams = model.PowerLawFit(mode, alpha, threshold);
+    WritePowerLawResults(powerLawParams, report, reportCur);
    
     t = clock() - t;
     float cur_time = ((float)t)/CLOCKS_PER_SEC;
