@@ -8,6 +8,10 @@
 
 #include "model.cpp"
 
+#include <cassert>
+#include <cmath>
+
+
 namespace patch
 {
     template < typename T > std::string to_string( const T& n )
@@ -18,138 +22,64 @@ namespace patch
     }
 }
 
-void WriteMessage(std::string message, std::ofstream& report, std::ofstream& reportCur)
-{
-    report << message << std::endl;
-    reportCur << message << std::endl;
-    std::cout << message << std::endl;
+void create_file(const std::string& filename) {
+  std::ofstream myfile;
+  myfile.open(filename);
+  myfile << "vertices" << "," << "edges" << "," << "expectedEdges" << std::endl;
+  myfile.close();
 }
 
-void WritePowerLawResults(PowerLawParams powerLawParams, std::ofstream& report, std::ofstream& reportCur)
-{
-    PowerLawResult resultForGoodVertices = powerLawParams.resultForGoodVertices;
-    PowerLawResult resultForBadVertices = powerLawParams.resultForBadVertices;
-    PowerLawResult resultForAllVertices = powerLawParams.resultForAllVertices;
-
-    WriteMessage(" ", report, reportCur);
-    std::string goodVerticesPowerLaw = "Power-Law with good vertices. Has " + 
-                                    patch::to_string(resultForGoodVertices.size) + " vertices ";
-    WriteMessage(goodVerticesPowerLaw, report, reportCur);
-    goodVerticesPowerLaw = patch::to_string(resultForGoodVertices.alpha) + " " + 
-                           patch::to_string(resultForGoodVertices.xmin) + " " +
-                           patch::to_string(resultForGoodVertices.logLikehood) + " " + 
-                           patch::to_string(resultForGoodVertices.probKS) + " " + 
-                           patch::to_string(resultForGoodVertices.pValueKS) + " ";
-    WriteMessage(goodVerticesPowerLaw, report, reportCur);
-    
-    WriteMessage(" ", report, reportCur);
-    std::string badVerticesPowerLaw = "Power-Law with bad vertices. Has " + 
-                                    patch::to_string(resultForBadVertices.size) + " vertices ";
-    WriteMessage(badVerticesPowerLaw, report, reportCur);
-    badVerticesPowerLaw = patch::to_string(resultForBadVertices.alpha) + " " + 
-                          patch::to_string(resultForBadVertices.xmin) + " " +
-                          patch::to_string(resultForBadVertices.logLikehood) + " " + 
-                          patch::to_string(resultForBadVertices.probKS) + " " + 
-                          patch::to_string(resultForBadVertices.pValueKS) + " ";
-    WriteMessage(badVerticesPowerLaw, report, reportCur);
-
-    WriteMessage(" ", report, reportCur);
-    std::string allVerticesPowerLaw = "Power-Law with all vertices. Has " + 
-                                    patch::to_string(resultForAllVertices.size) + " vertices ";
-    WriteMessage(allVerticesPowerLaw, report, reportCur);
-    allVerticesPowerLaw = patch::to_string(resultForAllVertices.alpha) + " " + 
-                          patch::to_string(resultForAllVertices.xmin) + " " +
-                          patch::to_string(resultForAllVertices.logLikehood) + " " + 
-                          patch::to_string(resultForAllVertices.probKS) + " " + 
-                          patch::to_string(resultForAllVertices.pValueKS) + " ";
-    WriteMessage(allVerticesPowerLaw, report, reportCur);
+void print_to_file(const std::string& filename, int vertices, int edges, int expectedEdges) {
+  std::ofstream myfile;
+  myfile.open(filename, std::ios::app);
+  myfile << vertices <<","<< edges << "," << expectedEdges << std::endl;
+  myfile.close();
 }
 
+int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, double threshold) {
+    assert(dimension == 3);
+    float averageDegree = 0;
+    if (threshold < mode * mode) {
+        averageDegree = 0.5 - 0.5*alpha*alpha*threshold/(alpha + 1)/(alpha + 1)/mode/mode;
+    } else {
+        averageDegree = pow(mode, 2.*alpha)/pow(threshold, alpha)/2. * 
+            (log(threshold)/(alpha + 1) - alpha*alpha/(alpha + 1)/(alpha+1) + 1);
+    }
+    return int(averageDegree * (size) * (size - 1) / 2.);
+}
 
-void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, bool calcClusterCoef)
+void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, std::string filename)
 {
-    std::ofstream report ("report.txt", std::fstream::out | std::fstream::app);
-    std::ofstream reportCur ("results_graphs/report.txt", std::fstream::out | std::fstream::trunc);
     srand(time(NULL));
     Random::Set(((float) rand()) / (float) RAND_MAX);
 
     std::string params = "size - " + patch::to_string(size) + "; dimension - " + patch::to_string(dimension) +
                         "; alpha - " + patch::to_string(alpha) + "; mode - " + patch::to_string(mode) + "; threshold - " + 
                         patch::to_string(threshold);
-    WriteMessage(params, report, reportCur);
 
     clock_t t;
     t = clock();
 
-    Model model(size, dimension, calcClusterCoef);   
+    Model model(size, dimension);   
 
-    std::cout << "Generating sphere" << std::endl;
     model.GenerateCoords();
-
-    std::string genWeights = "Generating weights :  Pareto";
-    WriteMessage(genWeights, report, reportCur);
     double mean = model.GenerateWeights(alpha, mode); 
-    std::string meanValue = "Mean value of distibution is  " + patch::to_string(mean);
-    WriteMessage(meanValue, report, reportCur);
 
-    std::string genEdges = "Generating edges :  w*w'*e^(x,x')";
-    WriteMessage(genEdges, report, reportCur);
     model.GenerateEdges(threshold);
   
-    std::string sizeOfModel = "Graph has " + patch::to_string(model.GetVerticesNumber()) + 
-                            " vertices and " + patch::to_string(model.GetEdgesNumber()) + " edges";
-    WriteMessage(sizeOfModel, report, reportCur);
+    print_to_file(filename, model.GetVerticesNumber(), model.GetEdgesNumber(), 
+        getTheoryNumberEdges(size, dimension, alpha, mode, threshold));
 
-    std::cout << "Power-Law fitting" << std::endl;
-    PowerLawParams powerLawParams = model.PowerLawFit(mode, alpha, threshold);
-    WritePowerLawResults(powerLawParams, report, reportCur);
-   
-    t = clock() - t;
-    float cur_time = ((float)t)/CLOCKS_PER_SEC;
+    // std::string sizeOfModel = "vertices: " + patch::to_string(model.GetVerticesNumber()) + 
+    //                        " edges: " + patch::to_string(model.GetEdgesNumber()) + " expected edges:" + 
+    //                         patch::to_string(getTheoryNumberEdges(size, dimension, alpha, mode, threshold));
 
-    if (calcClusterCoef) 
-    {
-        WriteMessage(" ", report, reportCur);
-        double clusterCoef = model.GetAverageLocalClusterCoef();
-        std::string clusterString = "Graph has Average Local Cluster Coefficient: " + patch::to_string(clusterCoef);
-        WriteMessage(clusterString, report, reportCur); 
-
-     
-        WriteMessage(" ", report, reportCur);
-        clusterCoef = model.GetGlobalClusterCoef();
-        clusterString = "Graph has Global Cluster Coefficient: " + patch::to_string(clusterCoef);
-        WriteMessage(clusterString, report, reportCur);
-
-        WriteMessage(" ", report, reportCur);
-        double lenght = model.GetAverageShortestPathLength();
-        std::string lengthString = "Graph has Average Shortest Path Length: " + patch::to_string(lenght);
-        WriteMessage(lengthString, report, reportCur);
-    }
-     
-    WriteMessage(" ", report, reportCur);
-    std::string modelTime = "It took " + patch::to_string(cur_time) + " seconds";
-    WriteMessage(modelTime, report, reportCur);     
-
-    time_t rawtime;
-    struct tm * timeinfo;
-    time (&rawtime);
-    timeinfo = localtime (&rawtime);
-
-    report << "Current local time and date: "<< asctime(timeinfo) << std::endl;
-    reportCur << "Current local time and date: "<< asctime(timeinfo) << std::endl;
-    std::cout << "Current local time and date: "<< asctime(timeinfo) << std::endl;
-
-    report << " ----------------------------------------" << std::endl;
-    report << std::endl;
-    reportCur << std::endl; 
-      
-    reportCur.close();
-    report.close(); 
+    // std::cout << sizeOfModel << std::endl;
 }   
 
 int main(int argc, char* argv[])
 {
-    if (argc != 7)
+    if (false)
     { 
         std::cout << "Not right args" << std::endl;
         std::cout << "1 arg is the number of vertices" << std::endl;
@@ -157,31 +87,58 @@ int main(int argc, char* argv[])
         std::cout << "3 arg is the degree of pareto-distribution" << std::endl;
         std::cout << "4 arg is the mode of pareto-distribution" << std::endl;
         std::cout << "5 arg is the threshold for edges" << std::endl;
-        std::cout << "6 arg is 0 if you don't want to compute claster_coefficient" << std::endl;
   
         return -1;
     } 
 
-    long long size = atoi(argv[1]);
-    int dimension = atoi(argv[2]);
-    double alpha = atof(argv[3]);
-    double mode = atof(argv[4]);  
-    double threshold = atof(argv[5]);
-    bool calc_clusterCoef = atoi(argv[6]);
- 
-    GenerateReport(size, dimension, alpha, mode, threshold, calc_clusterCoef);
+    long long size;
+    int dimension;
+    double alpha;
+    double mode; 
+    double threshold;
+    bool calc_clusterCoef;   
 
+    if (argc == 6) {
+        long long size = atoi(argv[1]);
+        int dimension = atoi(argv[2]);
+        double alpha = atof(argv[3]);
+        double mode = atof(argv[4]);  
+        double threshold = atof(argv[5]);
+        GenerateReport(size, dimension, alpha, mode, threshold, "temp.txt");
+    } else {
+        dimension = 3;
+
+        for (alpha = 1; alpha <= 3; alpha += 1) {
+
+            std::string filename = "alpha_" + patch::to_string(int(alpha)) + ".txt";
+            create_file(filename);
+
+            std::vector<int> sizes = {
+             10,
+             16,
+             26,
+             42,
+             69,
+             112,
+             183,
+             297,
+             483,
+             784,
+             1274,
+             2069,
+             3359,
+             5455,
+             8858,
+             15000};
+
+            for (int size: sizes) {
+                mode = 1;
+                threshold = pow(size, 1. / alpha);
+                GenerateReport(size, dimension, alpha, mode, threshold, filename);
+            }
+            std::cout << std::endl;
+        }
+    }
     return 0;
-}   
-
-//больший размер?
-
-//exp - странные результаты/ снизить threshold? 
-
-//перебрать другие случаи доказанные
-//изменение параметроов (размер, размерность, граница, степень распределения) и отслеживание другие (клас. коэф, power-law)
-
-//диаметр графа?
-
-//exp / (w*w')???? Power-law наоборот????
+}
  
