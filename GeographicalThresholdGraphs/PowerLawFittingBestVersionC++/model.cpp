@@ -94,7 +94,7 @@ public:
                 }
 
                 // Получаем взаимодействие между вершинами
-                double value = GetExpModelInteraction(dot, i, j);
+                double value = GetSimpleModelInteraction(dot, i, j);
 
                 // Если полученное значение больше границы - доабвляем ребро
                 if (value >= threshold)
