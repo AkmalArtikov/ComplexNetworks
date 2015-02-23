@@ -59,6 +59,10 @@ public:
         for (int i = 0; i < size; ++i)
         {
             std::vector<double> coords = RandomGenerator::GenerateUnitNormalVector(dimension);
+            for (int j = 0; j < coords.size(); j++) {
+            //    std::cout << coords[j] << " ";
+            }
+            //std::cout << std::endl;
             graph.SetCoords(i, coords);
         }
     }
@@ -133,6 +137,11 @@ public:
     double GetGlobalClusterCoef() const
     {
         return graph.GetGlobalClusterCoef();
+    }
+
+    int GetNumberTriangles() const 
+    {
+        return graph.GetNumberTriangles();
     }
 
     /* Возвращает результат power_law_fit к разным множествам вершин ("хорошие", "плохие", все)

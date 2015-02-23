@@ -48,8 +48,7 @@ int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, dou
     return int(averageDegree * (size) * (size - 1) / 2.);
 }
 
-void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, std::string filename)
-{
+void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, std::string filename) {
     srand(time(NULL));
     Random::Set(((float) rand()) / (float) RAND_MAX);
 
@@ -68,17 +67,10 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     model.GenerateEdges(threshold);
   
     print_to_file(filename, model.GetVerticesNumber(), model.GetEdgesNumber(), 
-        getTheoryNumberEdges(size, dimension, alpha, mode, threshold));
+        getTheoryNumberEdges(size, dimension, alpha, mode, threshold));  
+}
 
-    // std::string sizeOfModel = "vertices: " + patch::to_string(model.GetVerticesNumber()) + 
-    //                        " edges: " + patch::to_string(model.GetEdgesNumber()) + " expected edges:" + 
-    //                         patch::to_string(getTheoryNumberEdges(size, dimension, alpha, mode, threshold));
-
-    // std::cout << sizeOfModel << std::endl;
-}   
-
-int main(int argc, char* argv[])
-{
+void EdgesExperiment(int argc, char* argv[]) {
     if (false)
     { 
         std::cout << "Not right args" << std::endl;
@@ -88,7 +80,7 @@ int main(int argc, char* argv[])
         std::cout << "4 arg is the mode of pareto-distribution" << std::endl;
         std::cout << "5 arg is the threshold for edges" << std::endl;
   
-        return -1;
+        return;
     } 
 
     long long size;
@@ -97,6 +89,7 @@ int main(int argc, char* argv[])
     double mode; 
     double threshold;
     bool calc_clusterCoef;   
+
 
     if (argc == 6) {
         long long size = atoi(argv[1]);
@@ -139,6 +132,71 @@ int main(int argc, char* argv[])
             std::cout << std::endl;
         }
     }
+}
+
+Model MakeModel(int size, int dimension, double alpha, double mode, double threshold, bool calcCluster) {
+    Model model(size, dimension, calcCluster);   
+    model.GenerateCoords();
+    double mean = model.GenerateWeights(alpha, mode); 
+    model.GenerateEdges(threshold);
+    return model;
+}
+
+double CalculateTriangeProbability(int dimension, double alpha, double mode, double threshold, int numberExperiments = 10000) {
+  double numberTriangles = 0;
+  for (int attemp = 0; attemp < numberExperiments; ++attemp) {
+    Model model = MakeModel(3, dimension, alpha, mode, threshold, true);
+    numberTriangles += model.GetNumberTriangles();
+  }
+  // std::cout << "numberTriangles = " << numberTriangles << std::endl;
+  return numberTriangles / numberExperiments;
+}
+
+void TrianglesExperiment() {
+
+    long long size;
+    int dimension;
+    double alpha;
+    double mode; 
+    double threshold;
+
+    dimension = 3;
+    alpha = 1;
+    mode = 1;
+
+    std::ofstream myfile;
+    myfile.open("triagles.txt");
+    myfile << "size, number triagles, expected number triagles" << std::endl; 
+
+    int NUMBER_POINTS = 10;
+    int MAX_SIZE = 5000;
+    int MIDDLE_SIZE = 300;
+    
+    for (size = 3; size < MIDDLE_SIZE; size += MIDDLE_SIZE / NUMBER_POINTS) {
+      threshold = size;
+      myfile << size << ", ";
+      Model model = MakeModel(size, dimension, alpha, mode, threshold, true);
+      double experimentTriangeProbability = CalculateTriangeProbability(dimension, alpha, mode, threshold, 100 * size * size );
+      int experimentTriangesNumber = int(experimentTriangeProbability * size * (size - 1) * (size - 2) / 6. );
+      myfile << model.GetNumberTriangles() << ", ";
+      myfile << experimentTriangesNumber << std::endl;
+    }
+    for (size = MIDDLE_SIZE; size < MAX_SIZE; size += (MAX_SIZE - MIDDLE_SIZE) / NUMBER_POINTS) {
+      threshold = size;
+      myfile << size << ", ";
+      double experimentTriangeProbability = CalculateTriangeProbability(dimension, alpha, mode, threshold, size * size);
+      int experimentTriangesNumber = int(experimentTriangeProbability * size * (size - 1) * (size - 2) / 6. );
+      myfile << ", ";
+      myfile << experimentTriangesNumber << std::endl;
+    }
+    myfile.close();
+}
+
+int main(int argc, char* argv[])
+{
+    srand(time(NULL));
+    Random::Set(((float) rand()) / (float) RAND_MAX);
+    TrianglesExperiment();   
     return 0;
 }
  
