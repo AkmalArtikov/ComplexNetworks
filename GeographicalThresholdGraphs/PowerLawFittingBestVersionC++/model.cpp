@@ -139,6 +139,17 @@ public:
         return graph.GetGlobalClusterCoef();
     }
 
+    bool IsTick(int v1, int v2, int v3) const
+    {
+        return graph.IsTick(v1, v2, v3);
+    }
+
+
+    bool IsEdge(int v1, int v2) const
+    {
+        return graph.IsEdge(v1, v2);
+    }
+
     int GetNumberTriangles() const 
     {
         return graph.GetNumberTriangles();

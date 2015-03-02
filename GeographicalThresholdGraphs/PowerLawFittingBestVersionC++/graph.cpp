@@ -80,6 +80,14 @@ public:
         return edgesNumber;
     }
 
+    bool IsTick(int v1, int v2, int v3) const {
+        return adjMatrix[v1][v2] && adjMatrix[v1][v3];
+    }
+
+    bool IsEdge(int v1, int v2) const {
+        return adjMatrix[v1][v2];
+    }
+
     /* Возвращает усредненный локальный кластерный коэффициент. 
     Считаются кластерные коэфициенты каждой вершины, которые затем усредняются */
     double GetAverageLocalClusterCoef() const

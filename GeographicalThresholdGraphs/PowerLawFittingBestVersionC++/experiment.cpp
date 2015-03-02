@@ -23,21 +23,20 @@ namespace patch
 }
 
 void create_file(const std::string& filename) {
-  std::ofstream myfile;
-  myfile.open(filename);
-  myfile << "vertices" << "," << "edges" << "," << "expectedEdges" << std::endl;
-  myfile.close();
+    std::ofstream myfile;
+    myfile.open(filename);
+    myfile << "vertices" << "," << "edges" << "," << "expectedEdges" << ", " << "expectedVarience" << std::endl;
+    myfile.close();
 }
 
-void print_to_file(const std::string& filename, int vertices, int edges, int expectedEdges) {
-  std::ofstream myfile;
-  myfile.open(filename, std::ios::app);
-  myfile << vertices <<","<< edges << "," << expectedEdges << std::endl;
-  myfile.close();
+void print_to_file(const std::string& filename, int vertices, int edges, int expectedEdges, int expectedVarience) {
+    std::ofstream myfile;
+    myfile.open(filename, std::ios::app);
+    myfile << vertices <<","<< edges << "," << expectedEdges << "," << expectedVarience << std::endl;
+    myfile.close();
 }
 
-
-int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, double threshold) {
+float getAverageDegree(int dimension, double alpha, double mode, double threshold) {
     assert(dimension == 3);
     float averageDegree = 0;
     if (threshold < mode * mode) {
@@ -46,7 +45,35 @@ int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, dou
         averageDegree = pow(mode, 2.*alpha)/pow(threshold, alpha)/2. * 
             (log(threshold)*alpha/(alpha + 1) - alpha*alpha/(alpha + 1)/(alpha+1) + 1);
     }
+  return averageDegree;
+}
+
+long double getTickProbability(int dimension, double alpha, double mode, double threshold) {
+    assert(dimension == 3);
+    long double tickProbability = 0;
+    if (threshold < mode * mode) {
+        
+    } else {
+      tickProbability += 1/4. * pow(mode, 2*alpha)/pow(threshold, 2*alpha)/pow(alpha+1, 2)*(pow(threshold,alpha)-pow(mode, 2*alpha));
+      tickProbability += 1/4.* pow(mode, 2*alpha) / pow(threshold, alpha); 
+      tickProbability -= 1/2.*pow(alpha, 2)/(alpha+1)*threshold*pow(mode, alpha-1)/(alpha+1)* pow(mode, alpha+1) / pow(threshold, alpha+1);
+      tickProbability +=  1/4. *pow(alpha, 3)*pow(threshold, 2)*pow(mode, alpha-2)/pow(alpha+1, 2)/ (alpha + 2)
+            * pow(mode, alpha+2) / pow(threshold, alpha+2);
+    }
+  return tickProbability;
+}
+
+int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, double threshold) {
+    assert(dimension == 3);
+    double averageDegree = getAverageDegree(dimension, alpha, mode, threshold);
     return int(averageDegree * (size) * (size - 1) / 2.);
+}
+
+int getTheoryVariance(int size, int dimension, double alpha, double mode, double threshold) {
+   long double tickProbability = getTickProbability(dimension, alpha, mode, threshold);
+   long double averageDegree = getAverageDegree(dimension, alpha, mode, threshold);
+   return size * (size - 1) / 2 * averageDegree * (1 - averageDegree) + (tickProbability - averageDegree*averageDegree) *
+      size * (size - 1) * (size - 2) / 2 ;
 }
 
 void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, std::string filename) {
@@ -61,10 +88,12 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     double mean = model.GenerateWeights(alpha, mode); 
 
     model.GenerateEdges(threshold);
-  
+
     print_to_file(filename, model.GetVerticesNumber(), model.GetEdgesNumber(), 
-        getTheoryNumberEdges(size, dimension, alpha, mode, threshold));  
+         getTheoryNumberEdges(size, dimension, alpha, mode, threshold), getTheoryVariance(size, dimension, alpha, mode, threshold));  
 }
+
+double CalculateTickProbability(int dimension, double alpha, double mode, double threshold);
 
 void EdgesExperiment(int argc, char* argv[]) {
     if (false)
@@ -96,9 +125,9 @@ void EdgesExperiment(int argc, char* argv[]) {
         GenerateReport(size, dimension, alpha, mode, threshold, "temp.txt");
     } else {
         dimension = 3;
-        int NUMBER_EXPERIMENTS = 10;
+        int NUMBER_EXPERIMENTS = 20;
 
-        for (alpha = 2; alpha <= 3; alpha += 1) {
+        for (alpha = 3; alpha <= 3; alpha += 1) {
 
             std::string filename = "alpha_" + patch::to_string(int(alpha)) + ".txt";
             create_file(filename);
@@ -119,7 +148,11 @@ void EdgesExperiment(int argc, char* argv[]) {
              3359,
              5455,
              8858,
-             15000
+             10000,
+             12000,
+             14000,
+             16000,
+             18000
              };
 
             for (int size: sizes) {
@@ -148,7 +181,21 @@ double CalculateTriangeProbability(int dimension, double alpha, double mode, dou
     Model model = MakeModel(3, dimension, alpha, mode, threshold, true);
     numberTriangles += model.GetNumberTriangles();
   }
-  // std::cout << "numberTriangles = " << numberTriangles << std::endl;
+  return numberTriangles / numberExperiments;
+}
+
+
+double CalculateTickProbability(int dimension, double alpha, double mode, double threshold) {
+  int numberExperiments = 100000;
+  double numberTriangles = 0;
+
+  double numberEdges = 0;
+
+  for (int attemp = 0; attemp < numberExperiments; ++attemp) {
+    Model model = MakeModel(3, dimension, alpha, mode, threshold, true);
+    numberTriangles += model.IsTick(0, 1, 2);
+    numberEdges += model.IsEdge(0, 1);
+  }
   return numberTriangles / numberExperiments;
 }
 
