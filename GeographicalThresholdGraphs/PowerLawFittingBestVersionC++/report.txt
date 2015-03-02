@@ -8511,3 +8511,48 @@ size - 300000; dimension - 3; alpha - 8; mode - 0.4; threshold - 0.6
 Generating weights :  Pareto
 Mean value of distibution is  0.542331
 Generating edges :  w*w'*e^(x,x')
+size - 4; dimension - 3; alpha - 1; mode - 1; threshold - 0
+Generating weights :  Pareto
+Mean value of distibution is  4.49119
+Generating edges :  w*w'*e^(x,x')
+Graph has 4 vertices and 6 edges
+size - 4; dimension - 3; alpha - 1; mode - 1; threshold - 0
+Generating weights :  Pareto
+Mean value of distibution is  2.09479
+Generating edges :  w*w'*e^(x,x')
+Graph has 4 vertices and 6 edges
+size - 4; dimension - 3; alpha - 1; mode - 1; threshold - 0
+Generating weights :  Pareto
+Mean value of distibution is  2.79917
+Generating edges :  w*w'*e^(x,x')
+Graph has 4 vertices and 6 edges
+size - 4; dimension - 3; alpha - 1; mode - 1; threshold - 0
+Generating weights :  Pareto
+Mean value of distibution is  2.95248
+Generating edges :  w*w'*e^(x,x')
+Graph has 4 vertices and 6 edges
+size - 4; dimension - 3; alpha - 1; mode - 1; threshold - 0
+Generating weights :  Pareto
+Mean value of distibution is  5.94368
+Generating edges :  w*w'*e^(x,x')
+Graph has 4 vertices and 6 edges
+size - 4; dimension - 3; alpha - 1; mode - 1; threshold - 0
+Generating weights :  Pareto
+Mean value of distibution is  3.04367
+Generating edges :  w*w'*e^(x,x')
+Graph has 4 vertices and 3 edges
+ 
+Power-Law with good vertices. Has -776321416 vertices 
+1.4822e-323 6.95326e-310 0 6.95119e-310 0 
+ 
+Power-Law with bad vertices. Has 4 vertices 
+inf 1 -nan 1.79769e+308 1 
+ 
+Power-Law with all vertices. Has 4 vertices 
+inf 1 -nan 1.79769e+308 1 
+ 
+It took 0.00046 seconds
+Current local time and date: Mon Feb 23 12:44:58 2015
+
+ ----------------------------------------
+

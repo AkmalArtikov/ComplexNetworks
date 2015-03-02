@@ -36,6 +36,7 @@ void print_to_file(const std::string& filename, int vertices, int edges, int exp
   myfile.close();
 }
 
+
 int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, double threshold) {
     assert(dimension == 3);
     float averageDegree = 0;
@@ -43,21 +44,16 @@ int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, dou
         averageDegree = 0.5 - 0.5*alpha*alpha*threshold/(alpha + 1)/(alpha + 1)/mode/mode;
     } else {
         averageDegree = pow(mode, 2.*alpha)/pow(threshold, alpha)/2. * 
-            (log(threshold)/(alpha + 1) - alpha*alpha/(alpha + 1)/(alpha+1) + 1);
+            (log(threshold)*alpha/(alpha + 1) - alpha*alpha/(alpha + 1)/(alpha+1) + 1);
     }
     return int(averageDegree * (size) * (size - 1) / 2.);
 }
 
 void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, std::string filename) {
-    srand(time(NULL));
-    Random::Set(((float) rand()) / (float) RAND_MAX);
 
     std::string params = "size - " + patch::to_string(size) + "; dimension - " + patch::to_string(dimension) +
                         "; alpha - " + patch::to_string(alpha) + "; mode - " + patch::to_string(mode) + "; threshold - " + 
                         patch::to_string(threshold);
-
-    clock_t t;
-    t = clock();
 
     Model model(size, dimension);   
 
@@ -100,8 +96,9 @@ void EdgesExperiment(int argc, char* argv[]) {
         GenerateReport(size, dimension, alpha, mode, threshold, "temp.txt");
     } else {
         dimension = 3;
+        int NUMBER_EXPERIMENTS = 10;
 
-        for (alpha = 1; alpha <= 3; alpha += 1) {
+        for (alpha = 2; alpha <= 3; alpha += 1) {
 
             std::string filename = "alpha_" + patch::to_string(int(alpha)) + ".txt";
             create_file(filename);
@@ -122,12 +119,15 @@ void EdgesExperiment(int argc, char* argv[]) {
              3359,
              5455,
              8858,
-             15000};
+             15000
+             };
 
             for (int size: sizes) {
-                mode = 1;
-                threshold = pow(size, 1. / alpha);
-                GenerateReport(size, dimension, alpha, mode, threshold, filename);
+                for (int experimentID = 0; experimentID < NUMBER_EXPERIMENTS; ++experimentID) {
+                  mode = 1;
+                  threshold = pow(size, 1. / alpha);
+                  GenerateReport(size, dimension, alpha, mode, threshold, filename);
+                }
             }
             std::cout << std::endl;
         }
@@ -196,7 +196,10 @@ int main(int argc, char* argv[])
 {
     srand(time(NULL));
     Random::Set(((float) rand()) / (float) RAND_MAX);
-    TrianglesExperiment();   
+    
+    
+    EdgesExperiment(argc, argv);   
+    
     return 0;
 }
  
