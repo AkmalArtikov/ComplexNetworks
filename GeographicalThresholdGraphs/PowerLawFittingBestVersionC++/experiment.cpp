@@ -43,7 +43,8 @@ float getAverageDegree(int dimension, double alpha, double mode, double threshol
         averageDegree = 0.5 - 0.5*alpha*alpha*threshold/(alpha + 1)/(alpha + 1)/mode/mode;
     } else {
         averageDegree = pow(mode, 2.*alpha)/pow(threshold, alpha)/2. * 
-            (log(threshold)*alpha/(alpha + 1) - alpha*alpha/(alpha + 1)/(alpha+1) + 1);
+            (log(threshold)*alpha/(alpha + 1) - alpha*alpha/(alpha + 1)/(alpha+1) + 1.);
+        std::cout << "averageDegree = " << averageDegree << std::endl;
     }
   return averageDegree;
 }
@@ -66,6 +67,9 @@ long double getTickProbability(int dimension, double alpha, double mode, double 
 int getTheoryNumberEdges(int size, int dimension, double alpha, double mode, double threshold) {
     assert(dimension == 3);
     double averageDegree = getAverageDegree(dimension, alpha, mode, threshold);
+    std::cout << "size * averageDegree = " << size * averageDegree << std::endl;
+    std::cout << std::endl;
+    
     return int(averageDegree * (size) * (size - 1) / 2.);
 }
 
@@ -94,6 +98,19 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
 }
 
 double CalculateTickProbability(int dimension, double alpha, double mode, double threshold);
+
+double getLinearGrouthThresholder(int size, double alpha, double mode) {
+    double EPS = 1e-6;
+    assert(fabs(mode - 1.0) < EPS);
+    int numberIteration = 1000;
+    double result = size * size;
+    for (int i = 0; i < numberIteration; ++i) {
+      result = 1. * size / 4. * (log(result)*alpha/(alpha + 1) - alpha*alpha/(alpha + 1)/(alpha+1) + 1.);
+      result = pow(result, 1./alpha);
+    }
+    std::cout << "size = " << size << " threshold = " << result << std::endl;
+    return result;    
+}
 
 void EdgesExperiment(int argc, char* argv[]) {
     if (false)
@@ -127,13 +144,13 @@ void EdgesExperiment(int argc, char* argv[]) {
         dimension = 3;
         int NUMBER_EXPERIMENTS = 20;
 
-        for (alpha = 3; alpha <= 3; alpha += 1) {
+        for (alpha = 1; alpha <= 3; alpha += 1) {
 
             std::string filename = "alpha_" + patch::to_string(int(alpha)) + ".txt";
-            create_file(filename);
+            // create_file(filename);
 
             std::vector<int> sizes = {
-             10,
+             /*10,
              16,
              26,
              42,
@@ -144,21 +161,22 @@ void EdgesExperiment(int argc, char* argv[]) {
              483,
              784,
              1274,
-             2069,
-             3359,
-             5455,
-             8858,
-             10000,
-             12000,
-             14000,
-             16000,
-             18000
+             2000,
+             3000,
+             5000,
+             6000,
+             7000,
+             8000,
+             9000//,
+             // 16000,
+             //18000*/
+             4000
              };
 
             for (int size: sizes) {
                 for (int experimentID = 0; experimentID < NUMBER_EXPERIMENTS; ++experimentID) {
                   mode = 1;
-                  threshold = pow(size, 1. / alpha);
+                  threshold = getLinearGrouthThresholder(size, alpha, mode);
                   GenerateReport(size, dimension, alpha, mode, threshold, filename);
                 }
             }
@@ -218,23 +236,29 @@ void TrianglesExperiment() {
     int NUMBER_POINTS = 10;
     int MAX_SIZE = 5000;
     int MIDDLE_SIZE = 300;
+
+    int NUMBER_EXPERIMENTS = 20;
     
     for (size = 3; size < MIDDLE_SIZE; size += MIDDLE_SIZE / NUMBER_POINTS) {
-      threshold = size;
-      myfile << size << ", ";
-      Model model = MakeModel(size, dimension, alpha, mode, threshold, true);
-      double experimentTriangeProbability = CalculateTriangeProbability(dimension, alpha, mode, threshold, 100 * size * size );
-      int experimentTriangesNumber = int(experimentTriangeProbability * size * (size - 1) * (size - 2) / 6. );
-      myfile << model.GetNumberTriangles() << ", ";
-      myfile << experimentTriangesNumber << std::endl;
+      for (int i = 0; i < NUMBER_EXPERIMENTS; ++i) { 
+        threshold = size;
+        myfile << size << ", ";
+        Model model = MakeModel(size, dimension, alpha, mode, threshold, true);
+        double experimentTriangeProbability = CalculateTriangeProbability(dimension, alpha, mode, threshold, 100 * size * size );
+        int experimentTriangesNumber = int(experimentTriangeProbability * size * (size - 1) * (size - 2) / 6. );
+        myfile << model.GetNumberTriangles() << ", ";
+        myfile << experimentTriangesNumber << std::endl;
+      }
     }
     for (size = MIDDLE_SIZE; size < MAX_SIZE; size += (MAX_SIZE - MIDDLE_SIZE) / NUMBER_POINTS) {
-      threshold = size;
-      myfile << size << ", ";
-      double experimentTriangeProbability = CalculateTriangeProbability(dimension, alpha, mode, threshold, size * size);
-      int experimentTriangesNumber = int(experimentTriangeProbability * size * (size - 1) * (size - 2) / 6. );
-      myfile << ", ";
-      myfile << experimentTriangesNumber << std::endl;
+      for (int i = 0; i < NUMBER_EXPERIMENTS; ++i) { 
+        threshold = size;
+        myfile << size << ", ";
+        double experimentTriangeProbability = CalculateTriangeProbability(dimension, alpha, mode, threshold, size * size);
+        int experimentTriangesNumber = int(experimentTriangeProbability * size * (size - 1) * (size - 2) / 6. );
+        myfile << ", ";
+        myfile << experimentTriangesNumber << std::endl;
+      }
     }
     myfile.close();
 }
@@ -246,6 +270,7 @@ int main(int argc, char* argv[])
     
     
     EdgesExperiment(argc, argv);   
+    // TrianglesExperiment();
     
     return 0;
 }
