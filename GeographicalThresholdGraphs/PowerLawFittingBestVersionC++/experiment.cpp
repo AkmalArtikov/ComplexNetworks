@@ -21,7 +21,7 @@ namespace patch
 void WriteMessage(std::string message, std::ofstream& report, std::ofstream& reportCur)
 {
     report << message << std::endl;
-    reportCur << message << std::endl;
+    reportCur << message << std::endl;  
     std::cout << message << std::endl;
 }
 
@@ -66,7 +66,7 @@ void WritePowerLawResults(PowerLawParams powerLawParams, std::ofstream& report, 
 }
 
 
-void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, bool calcClusterCoef)
+void GenerateReport(int size, int dimension, double alpha, double mode, double threshold, bool calcClusterCoef, double gamma)
 {
     std::ofstream report ("report.txt", std::fstream::out | std::fstream::app);
     std::ofstream reportCur ("results_graphs/report.txt", std::fstream::out | std::fstream::trunc);
@@ -75,13 +75,13 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
 
     std::string params = "size - " + patch::to_string(size) + "; dimension - " + patch::to_string(dimension) +
                         "; alpha - " + patch::to_string(alpha) + "; mode - " + patch::to_string(mode) + "; threshold - " + 
-                        patch::to_string(threshold);
+                        patch::to_string(threshold) + "; gamma - " + patch::to_string(gamma);
     WriteMessage(params, report, reportCur);
 
     clock_t t;
     t = clock();
 
-    Model model(size, dimension, calcClusterCoef);   
+    Model model(size, dimension, calcClusterCoef, gamma);   
 
     std::cout << "Generating sphere" << std::endl;
     model.GenerateCoords();
@@ -92,10 +92,10 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     std::string meanValue = "Mean value of distibution is  " + patch::to_string(mean);
     WriteMessage(meanValue, report, reportCur);
 
-    std::string genEdges = "Generating edges :  w*w'*e^(x,x')";
+    std::string genEdges = "Generating edges :   w*w'*(x,x')";
     WriteMessage(genEdges, report, reportCur);
-    model.GenerateEdges(threshold);
-  
+    model.GenerateEdges(threshold);  
+   
     std::string sizeOfModel = "Graph has " + patch::to_string(model.GetVerticesNumber()) + 
                             " vertices and " + patch::to_string(model.GetEdgesNumber()) + " edges";
     WriteMessage(sizeOfModel, report, reportCur);
@@ -103,18 +103,17 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
     std::cout << "Power-Law fitting" << std::endl;
     PowerLawParams powerLawParams = model.PowerLawFit(mode, alpha, threshold);
     WritePowerLawResults(powerLawParams, report, reportCur);
-   
+    
     t = clock() - t;
     float cur_time = ((float)t)/CLOCKS_PER_SEC;
 
     if (calcClusterCoef) 
-    {
+    { 
         WriteMessage(" ", report, reportCur);
         double clusterCoef = model.GetAverageLocalClusterCoef();
         std::string clusterString = "Graph has Average Local Cluster Coefficient: " + patch::to_string(clusterCoef);
         WriteMessage(clusterString, report, reportCur); 
-
-     
+ 
         WriteMessage(" ", report, reportCur);
         clusterCoef = model.GetGlobalClusterCoef();
         clusterString = "Graph has Global Cluster Coefficient: " + patch::to_string(clusterCoef);
@@ -125,7 +124,7 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
         std::string lengthString = "Graph has Average Shortest Path Length: " + patch::to_string(lenght);
         WriteMessage(lengthString, report, reportCur);
     }
-     
+      
     WriteMessage(" ", report, reportCur);
     std::string modelTime = "It took " + patch::to_string(cur_time) + " seconds";
     WriteMessage(modelTime, report, reportCur);     
@@ -149,7 +148,7 @@ void GenerateReport(int size, int dimension, double alpha, double mode, double t
 
 int main(int argc, char* argv[])
 {
-    if (argc != 7)
+    if (argc != 8)
     { 
         std::cout << "Not right args" << std::endl;
         std::cout << "1 arg is the number of vertices" << std::endl;
@@ -158,7 +157,8 @@ int main(int argc, char* argv[])
         std::cout << "4 arg is the mode of pareto-distribution" << std::endl;
         std::cout << "5 arg is the threshold for edges" << std::endl;
         std::cout << "6 arg is 0 if you don't want to compute claster_coefficient" << std::endl;
-  
+        std::cout << "7 arg is 1 if you want unoriented network" << std::endl;
+        
         return -1;
     } 
 
@@ -168,8 +168,9 @@ int main(int argc, char* argv[])
     double mode = atof(argv[4]);  
     double threshold = atof(argv[5]);
     bool calc_clusterCoef = atoi(argv[6]);
- 
-    GenerateReport(size, dimension, alpha, mode, threshold, calc_clusterCoef);
+    double gamma = atof(argv[7]);
+
+    GenerateReport(size, dimension, alpha, mode, threshold, calc_clusterCoef, gamma);
 
     return 0;
 }   

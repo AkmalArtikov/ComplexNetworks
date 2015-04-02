@@ -8,6 +8,7 @@
 #include <string>
 
 #include <climits>
+#include <cmath>
 #include <iostream>
 
 #include "graph.cpp"
@@ -47,9 +48,10 @@ struct PowerLawParams
 class Model
 {
 public:
-    Model(int _size = 10000, int _dimension = 3, bool _calcCluster = false): size(_size)
-                                                                           , dimension(_dimension)
-                                                                           , graph(_size, _dimension, _calcCluster)
+    Model(int _size = 10000, int _dimension = 3, bool _calcCluster = false, double _gamma = 1): size(_size)
+                                                                            , dimension(_dimension)
+                                                                            , graph(_size, _dimension, _calcCluster, _gamma != 1)
+                                                                            , gamma(_gamma)
     {
     }
 
@@ -82,27 +84,60 @@ public:
     // Генерация ребер в модели
     void GenerateEdges(double threshold)
     {
-        for (int i = 0; i < size; ++i)
+        if (gamma == 1)
         {
-            for (int j = i + 1; j < size; ++j)
+            for (int i = 0; i < size; ++i)
             {
-                double dot = 0.0;
-
-                for (int k = 0; k < dimension; ++k)
+                for (int j = i + 1; j < size; ++j)
                 {
-                    dot += graph.GetCoords(i, k) * graph.GetCoords(j, k);
-                }
+                    double dot = 0.0;
 
-                // Получаем взаимодействие между вершинами
-                double value = GetExpModelInteraction(dot, i, j);
+                    for (int k = 0; k < dimension; ++k)
+                    {
+                        dot += graph.GetCoords(i, k) * graph.GetCoords(j, k);
+                    }
 
-                // Если полученное значение больше границы - доабвляем ребро
-                if (value >= threshold)
-                {
-                    graph.AddEdge(i, j);
+                    // Получаем взаимодействие между вершинами
+                    double value = GetSimpleModelInteraction(dot, i, j);
+
+                    // Если полученное значение больше границы - доабвляем ребро
+                    if (value >= threshold)
+                    {
+                        graph.AddEdge(i, j);
+                    }
                 }
             }
         }
+        else
+        {
+            for (int i = 0; i < size; ++i)
+            {
+                for (int j = 0; j < size; ++j)
+                {
+                    if (i == j)
+                    {
+                        continue;
+                    }
+
+                    double dot = 0.0;
+
+                    for (int k = 0; k < dimension; ++k)
+                    {
+                        dot += graph.GetCoords(i, k) * graph.GetCoords(j, k);
+                    }
+
+                    // Получаем взаимодействие между вершинами
+                    double value = GetSimpleModelInteraction(dot, i, j);
+
+                    // Если полученное значение больше границы - доабвляем ребро
+                    if (value >= threshold)
+                    {
+                        graph.AddEdge(i, j);
+                    }
+                }
+            }
+        }
+       
     }
 
     // Возвращает количество вершин
@@ -159,7 +194,7 @@ public:
         igraph_vector_reserve(&degreesCutForBad, size / 2);
 
         // Получаем условие на разделение вершин на категории
-        double thresh = GetExpModelThreshold(threshold, mode);
+        double thresh = GetSimpleModelThreshold(threshold, mode);
 
         int counterGood = 0;
         int counterBad = 0;
@@ -229,7 +264,7 @@ private:
     // Возвращает взаимодействие между вершинами в простой модели
     double GetSimpleModelInteraction(double dot, int i, int j)
     {
-        return dot * (graph.GetWeight(i) * graph.GetWeight(j));
+        return dot * (graph.GetWeight(i) * pow(graph.GetWeight(j), gamma));
     }
 
     // Возвращает границу разделения на 2 категории вершин в простой модели
@@ -251,7 +286,7 @@ private:
     }
 
     // Возвращает взаимодействие между вершинами в обратно-экспоненциальной модели
-    double GetExpReverseModelInteraction(double dot, int i, int j)
+    double GetExpReverseModelInteration(double dot, int i, int j)
     {
         return exp(dot) / (graph.GetWeight(i) * graph.GetWeight(j));    
     }
@@ -324,16 +359,6 @@ private:
         //create array for degree frequences
         std::vector<int> degProb(sizeDegree + 1, 0);
 
-  /*      std::vector<int> cutDegrees;
-
-        for (int i = 0; i < degSize; ++i)
-        {
-            if (VECTOR(degrees)[i] >= min)
-            {
-                cutDegrees.push_back(VECTOR(degrees)[i]);
-            }
-        }*/
-
         //create array for calcCommulate_func
         std::vector<double> calcCommulateDegrees(max, 0.0);
 
@@ -393,6 +418,9 @@ private:
 
     // Размерность пространства
     int dimension;
+
+    // Граф ориентированный?
+    double gamma;
 };
 
 #endif

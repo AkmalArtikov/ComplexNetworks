@@ -13,11 +13,15 @@ def plot_one(degrees, score, title, size, dimension, alpha_pareto, mode_pareto,
     plt.figure(figsize=(12, 10))
     label = ""
     if is_log:
-        label = "log(degree_freq)"
+        label = "log of degree frequencies"
     else:
-        label = "degree_freq"
+        label = "degree frequencies"
 
-    plt.plot(degrees, score, linestyle="None", marker='+', label=label)
+    if is_log:
+        plt.plot(degrees, score, linestyle="None", marker='8', markersize=5, markeredgewidth=0.0,label=label, color='r')
+    else:
+        plt.plot(degrees, score, linestyle="None", marker='8', markersize=7,  markeredgewidth=0.0, label=label, color='r')
+
 
     if is_log:
         x = [degrees[0], degrees[len(degrees) - 1]]
@@ -25,8 +29,7 @@ def plot_one(degrees, score, title, size, dimension, alpha_pareto, mode_pareto,
         y = [x[0] * alpha + b, x[1] * alpha + b]
 
         label = "power-law approximation"
-        plt.plot(x, y, label=label)
-
+        plt.plot(x, y, label=label, color='g')
     if is_line:
         x = []
         y = []
@@ -48,15 +51,23 @@ def plot_one(degrees, score, title, size, dimension, alpha_pareto, mode_pareto,
         label = "good and bad vertices threshold"
         plt.plot(x, y, label=label)
 
-    title = "size {0}, dimension {1}, alpha_pareto {2}, mode_pareto {3}, threshold {4}. {5}".format(size, dimension,
-                                                                                                    alpha_pareto,
-                                                                                                    mode_pareto,
-                                                                                                    threshold,
-                                                                                                    title)
+        #title = "size {0}, dimension {1}, alpha_pareto {2}, mode_pareto {3}, threshold {4}. {5}".format(size, dimension,
+        # alpha_pareto,
+        # mode_pareto,
+        # threshold,
+        # title)
 
     plt.ylim([0,max(score)])
-    plt.ylabel('Frequency')
-    plt.xlabel('Degrees')
+    title
+    if is_log:
+        plt.ylabel('Log of Frequency')
+        plt.xlabel('Log of Degree')
+        title = "Degree distribution in log/log coords"
+    else:
+        plt.ylabel('Frequency')
+        plt.xlabel('Degree')
+        title = "Degree distribution"
+
     plt.title(title)
 
     name = "results_graphs/"
@@ -78,6 +89,7 @@ def plot_one(degrees, score, title, size, dimension, alpha_pareto, mode_pareto,
     #plt.show()
 
 def plot_figures(file_name):
+
     f = open(file_name)
     lines = f.readlines()
     lines[0] = lines[0][:-1]
@@ -113,9 +125,9 @@ def plot_figures(file_name):
 
     if file_name == 'temp_degrees/temp.txt':
         plot_one(x, y, "freq / degree", size, dimension, alpha_pareto, mode_pareto,
-                 threshold, is_line=True, is_log=False, file_name=file_name)
+                 threshold, is_line=False, is_log=False, file_name=file_name)
         plot_one(new_x, new_y, "log(freq) / log(degree)", size, dimension, alpha_pareto, mode_pareto,
-                 threshold, is_line=True, is_log=True, alpha=alpha, file_name=file_name)
+                 threshold, is_line=False, is_log=True, alpha=alpha, file_name=file_name)
     else:
         plot_one(x, y, "freq / degree", size, dimension, alpha_pareto, mode_pareto,
                  threshold, is_log=False, file_name=file_name)
@@ -128,22 +140,14 @@ def plot_figure_commute(file_name):
     lines[0] = lines[0][:-1]
     f.close()
 
-    probs = lines[0].split(" ")
-    x = xrange(len(probs))
-
-    ind = 0
-    for i in xrange(len(probs)):
-        if float(probs[i]) < 1.0:
-            ind = i
-            break
-
-    x = range(ind, len(probs))
-    probs = probs[ind:]
+    probabilities = lines[0].split(" ")
+    xx = xrange(len(probabilities))
+    probabilities = [float(x) for x in probabilities]
 
     plt.figure(figsize=(12, 10))
-    plt.plot(x, probs, label="D(degree > x)")
+    plt.plot(xx, probabilities, label="D(degree > x)")
     plt.ylabel('Percentage of vertices which degree> x')
-    plt.xlabel('Degrees')
+    plt.xlabel('Degree')
     plt.title("Cumulative function for degrees")
     plt.legend(loc='upper right')
 
@@ -156,11 +160,11 @@ def plot_figure_commute(file_name):
     plt.savefig(name + '.png')
 
     plt.figure(figsize=(12, 10))
-    plt.plot(x, probs, label="log(D(degree > x))")
+    plt.plot(xx, probabilities, label="log(D(degree > x))")
     plt.legend(loc='upper right')
     plt.title("Cumulative function for degrees in log/log coords")
-    plt.ylabel('log Number of vertices which degree> x')
-    plt.xlabel('log Degrees')
+    plt.ylabel('Log of percentage of vertices which degree> x')
+    plt.xlabel('Log of degrees')
     plt.xscale('log')
     plt.yscale('log')
 
@@ -173,8 +177,8 @@ full = 'temp_degrees/temp.txt'
 commute_full = 'temp_degrees/cumulative_temp.txt'
 commute_good = 'temp_degrees/cumulative_temp_good.txt'
 
-plot_figures(good)
-plot_figures(bad)
+#plot_figures(good)
+#plot_figures(bad)
 plot_figures(full)
 plot_figure_commute(commute_full)
-plot_figure_commute(commute_good)
+#plot_figure_commute(commute_good)

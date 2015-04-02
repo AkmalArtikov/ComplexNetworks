@@ -9,13 +9,14 @@
 class Graph
 {
 public:
-    Graph(int _size = 10000, int _dimension = 3, bool _calcCluster = false): size(_size)
-                                                                           , dimension(_dimension)
-                                                                           , degrees(_size, 0)
-                                                                           , weights(_size)
-                                                                           , coords(_size, std::vector<double>(_dimension))
-                                                                           , edgesNumber(0)
-                                                                           , calcCluster(_calcCluster) 
+    Graph(int _size = 10000, int _dimension = 3, bool _calcCluster = false, bool _isOriented = false): size(_size)
+                                                                            , dimension(_dimension)
+                                                                            , degrees(_size, 0)
+                                                                            , weights(_size)
+                                                                            , coords(_size, std::vector<double>(_dimension))
+                                                                            , edgesNumber(0)
+                                                                            , calcCluster(_calcCluster) 
+                                                                            , isOriented(_isOriented)
     {
         if (calcCluster)
         {
@@ -27,12 +28,18 @@ public:
     void AddEdge(int i, int j)
     {
         degrees[i]++;
-        degrees[j]++;
+        if (!isOriented)
+        {
+            degrees[j]++;
+        }
 
         if (calcCluster)
         {
             adjMatrix[i][j] = true;
-            adjMatrix[j][i] = true;    
+            if (!isOriented)
+            {
+                adjMatrix[j][i] = true;    
+            }
         }
         
         edgesNumber++;
@@ -297,6 +304,9 @@ private:
 
     // Нужно ли считать кластерный коэффициент
     bool calcCluster;
+
+    // Граф ориентированный?
+    bool isOriented;
 };
 
 #endif 
